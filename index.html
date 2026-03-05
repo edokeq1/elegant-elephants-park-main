@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>ZEMRESURS</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Montserrat', 'sans-serif'],
+            },
+            colors: {
+              // Deep Steel Blue-Grey background
+              'brand-dark': '#16202A', 
+              // Lighter Steel for secondary backgrounds
+              'brand-charcoal': '#1F2F3D',
+              // Silver/Blue Grey Accent
+              'brand-accent': '#8DA3B5', 
+              // Pale Ice Blue for text highlights
+              'brand-accent-light': '#EBF5FB',
+            },
+            letterSpacing: {
+              'ultra-wide': '0.25em',
+            }
+          }
+        }
+      }
+    </script>
+    <style>
+      body {
+        margin: 0;
+        padding: 0;
+        background-color: #16202A;
+        color: white;
+      }
+      /* Custom smooth scroll behavior */
+      html {
+        scroll-behavior: smooth;
+      }
+      /* Custom Scrollbar Styles */
+      ::-webkit-scrollbar {
+        width: 6px;
+      }
+      ::-webkit-scrollbar-track {
+        background: #16202A;
+      }
+      ::-webkit-scrollbar-thumb {
+        background: #8DA3B5;
+        border-radius: 10px;
+      }
+      ::-webkit-scrollbar-thumb:hover {
+        background: #AABECB;
+      }
+      /* For Firefox */
+      * {
+        scrollbar-width: thin;
+        scrollbar-color: #8DA3B5 #16202A;
+      }
+
+      /* Premium Animations */
+      @keyframes revealUp {
+        from {
+          opacity: 0;
+          transform: translateY(20px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+
+      @keyframes fadeIn {
+        from { opacity: 0; }
+        to { opacity: 1; }
+      }
+
+      .animate-reveal-up {
+        animation: revealUp 0.8s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      }
+
+      .animate-fade-in {
+        animation: fadeIn 1.2s cubic-bezier(0.19, 1, 0.22, 1) forwards;
+      }
+
+      .stagger-1 { animation-delay: 0.1s; }
+      .stagger-2 { animation-delay: 0.2s; }
+      .stagger-3 { animation-delay: 0.3s; }
+      .stagger-4 { animation-delay: 0.4s; }
+      .stagger-5 { animation-delay: 0.5s; }
+      .stagger-6 { animation-delay: 0.6s; }
+      .stagger-7 { animation-delay: 0.7s; }
+      .stagger-8 { animation-delay: 0.8s; }
+    </style>
+  <script type="importmap">
+{
+  "imports": {
+    "react-dom/": "https://esm.sh/react-dom@^19.2.3/",
+    "lucide-react": "https://esm.sh/lucide-react@^0.562.0",
+    "react/": "https://esm.sh/react@^19.2.3/",
+    "react": "https://esm.sh/react@^19.2.3"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
