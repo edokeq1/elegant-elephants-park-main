@@ -140,14 +140,14 @@ export const ColTownSection: React.FC<ColTownSectionProps> = ({ t }) => {
                                 <h4 className="text-xl font-light uppercase tracking-wide border-l-4 border-brand-accent pl-6 text-white/90">
                                     {t.infrastructureList.title}
                                 </h4>
-                                <div className="grid grid-cols-1 gap-3">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                                     {t.infrastructureList.items.map((item: any, i: number) => (
-                                        <div key={i} className="flex items-center justify-between p-4 bg-white/5 rounded-2xl border border-white/5 hover:bg-white/10 transition-colors">
-                                            <span className="text-gray-300 text-sm font-light flex-1 mr-4">{item.name}</span>
-                                            <div className="text-right">
-                                                <span className="block text-brand-accent font-bold text-sm whitespace-nowrap">{item.area}</span>
-                                                {item.count && <span className="block text-gray-500 text-[10px] uppercase tracking-wider">{item.count}</span>}
+                                        <div key={i} className="flex flex-col justify-center p-3 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
+                                            <div className="flex justify-between items-start mb-1">
+                                                <span className="text-gray-300 text-xs font-light leading-tight pr-2">{item.name}</span>
+                                                <span className="text-brand-accent font-bold text-xs whitespace-nowrap">{item.area}</span>
                                             </div>
+                                            {item.count && <span className="text-gray-500 text-[9px] uppercase tracking-wider">{item.count}</span>}
                                         </div>
                                     ))}
                                 </div>
@@ -160,14 +160,14 @@ export const ColTownSection: React.FC<ColTownSectionProps> = ({ t }) => {
                                 <h4 className="text-xl font-light uppercase tracking-wide border-l-4 border-brand-accent pl-6 text-white/90">
                                     {t.housingList.title}
                                 </h4>
-                                <div className="grid grid-cols-1 gap-3">
+                                <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                                     {t.housingList.items.map((item: any, i: number) => (
-                                        <div key={i} className="flex items-center justify-between p-4 bg-white/5 rounded-2xl border border-white/5 hover:bg-white/10 transition-colors">
-                                            <span className="text-gray-300 text-sm font-light flex-1 mr-4">{item.name}</span>
-                                            <div className="text-right">
-                                                <span className="block text-brand-accent font-bold text-sm whitespace-nowrap">{item.count}</span>
-                                                <span className="block text-gray-500 text-[10px] uppercase tracking-wider">{item.area}</span>
+                                        <div key={i} className="flex flex-col justify-center p-3 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
+                                            <div className="flex justify-between items-start mb-1">
+                                                <span className="text-gray-300 text-xs font-light leading-tight pr-2">{item.name}</span>
+                                                <span className="text-brand-accent font-bold text-xs whitespace-nowrap">{item.count}</span>
                                             </div>
+                                            {item.area && <span className="text-gray-500 text-[9px] uppercase tracking-wider">{item.area}</span>}
                                         </div>
                                     ))}
                                 </div>

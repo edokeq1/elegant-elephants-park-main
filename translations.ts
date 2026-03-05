@@ -129,7 +129,7 @@ export const translations = {
       termTitle: 'Project Realization Term',
       termValue: '30 – 36 months',
       cadastralLink: 'View Cadastral Map',
-      location: 'Kyiv region, Makariv district, Kolonshchyna village council',
+      location: 'Bucha district, Makariv community, Kolonshchyna village council',
       infrastructureList: {
         title: 'Infrastructure Objects',
         items: [
@@ -167,7 +167,7 @@ export const translations = {
       termTitle: 'Realization Term',
       termValue: '30 – 36 months',
       cadastralLink: 'View Cadastral Map',
-      location: 'Kyiv region, Makariv district, Kolonshchyna village council',
+      location: 'Bucha district, Makariv community, Kolonshchyna village council',
       infrastructureList: {
         title: 'Infrastructure Objects',
         items: [
@@ -205,7 +205,7 @@ export const translations = {
       termTitle: 'Realization Term',
       termValue: '30 – 36 months',
       cadastralLink: 'View Cadastral Map',
-      location: 'Kyiv region, Makariv district, Kolonshchyna village council',
+      location: 'Bucha district, Makariv community, Kolonshchyna village council',
       housingList: {
         title: 'Residential Infrastructure',
         items: [
@@ -230,9 +230,9 @@ export const translations = {
       termTitle: 'Realization Term',
       termValue: '30 – 36 months',
       cadastralLink: null,
-      location: 'Kyiv region, Makariv district, Kolonshchyna village council',
+      location: 'Bucha district, Makariv community, Kolonshchyna village council',
       infrastructureList: {
-        title: 'Infrastructure Objects (36.75% / 10.52 Ha)',
+        title: 'Infrastructure Objects',
         items: [
           { name: 'Hotel & Restaurant complex with pool', area: '1.25 Ha' },
           { name: 'Combined Sports & Kids playground (Tennis, Basketball)', area: '0.75 Ha' },
@@ -243,7 +243,7 @@ export const translations = {
         ]
       },
       housingList: {
-        title: 'Residential Infrastructure (34.80% / 9.98 Ha)',
+        title: 'Residential Infrastructure',
         items: [
           { name: 'Capsule houses by lakes (42/28 m²)', count: '62 units', area: '1.82 Ha' },
           { name: 'Modular houses (26, 48, 62 m²)', count: '58 units', area: '3.48 Ha' },
@@ -269,7 +269,7 @@ export const translations = {
       termTitle: 'Realization Term',
       termValue: '36 – 48 months',
       cadastralLink: 'View Cadastral Map',
-      location: 'Kyiv region, Makariv district, Kolonshchyna village council',
+      location: 'Bucha district, Makariv community, Kolonshchyna village council',
       financials: {
         title: 'Financial Characteristics',
         items: [
@@ -309,7 +309,7 @@ export const translations = {
         sections: [
           {
             title: '1. Data Architecture',
-            content: 'Uneed Invest Group treats your personal information with the same precision and exclusivity as our residential architecture. We collect data specifically for providing our concierge, sales, and residential management services. This includes names, professional contact details, and investment preferences provided through our digital discovery portal.'
+            content: 'ZEMRESURS treats your personal information with the same precision and exclusivity as our residential architecture. We collect data specifically for providing our concierge, sales, and residential management services. This includes names, professional contact details, and investment preferences provided through our digital discovery portal.'
           },
           {
             title: '2. Security Protocol',
@@ -327,7 +327,7 @@ export const translations = {
         sections: [
           {
             title: '1. The Golden Standard',
-            content: 'By accessing this portal, you agree to the highest standards of professional conduct. Uneed Invest Group provides information regarding off-plan residential developments and investment opportunities. All renderings, visual representations, and conceptual drafts are for illustrative purposes and remain intellectual property of the developer.'
+            content: 'By accessing this portal, you agree to the highest standards of professional conduct. ZEMRESURS provides information regarding off-plan residential developments and investment opportunities. All renderings, visual representations, and conceptual drafts are for illustrative purposes and remain intellectual property of the developer.'
           },
           {
             title: '2. Advisory Disclaimer',
@@ -345,7 +345,7 @@ export const translations = {
         sections: [
           {
             title: '1. Utilization of Cookies',
-            content: 'To enhance your digital discovery of Uneed Invest Group, we use cookies—small data files placed on your device. These help us understand your preferences and ensure the smooth performance of our interactive zone maps and high-definition video backgrounds.'
+            content: 'To enhance your digital discovery of ZEMRESURS, we use cookies—small data files placed on your device. These help us understand your preferences and ensure the smooth performance of our interactive zone maps and high-definition video backgrounds.'
           },
           {
             title: '2. Analytical Excellence',
@@ -369,7 +369,7 @@ export const translations = {
       badge: 'Brand Philosophy',
       title1: 'EXPERTISE',
       title2: 'IN EVERY AREA.',
-      description: 'Uneed Invest Group doesn\'t just sell land. We create an ecosystem for capital growth.',
+      description: 'ZEMRESURS doesn\'t just sell land. We create an ecosystem for capital growth.',
       longDescription: 'Our team analyzes hundreds of hectares, studies community development plans and infrastructure projects, to offer you only those assets that are guaranteed to increase in price. We turn the chaotic land market into a clear financial tool.',
       heroImage: elephantParkImg,
       stats: [
@@ -576,7 +576,7 @@ export const translations = {
         {
           id: 'col-town',
           name: 'Complex "COL-TOWN"',
-          location: 'Kyiv region, Makariv district, Kolonshchyna village council',
+          location: 'Bucha district, Makariv community, Kolonshchyna village council',
           description: 'A unique investment opportunity combining three land plots (3.63 Ha, 1.9 Ha, 1.90 Ha) with a total area of 7.43 Ha. The landscape features a perfect balance: 3.63 Ha of dense forest and 3.8 Ha of scenic relief terrain (Hill). The project includes a comprehensive infrastructure package: a bath complex with an outdoor pool (0.55 Ha), sports and children\'s playgrounds (0.75 Ha), a kindergarten, and a commercial block (shop, cafe, pharmacy). The residential zone comprises 37 modular rental houses and 37 terrace-type houses of new architecture. Detailed amenities include a hangar for sports gear and backup generation facilities. Total project capitalization potential is estimated at $14.415 million.',
           area: '7.43 Ha',
           price: '$481,000',
@@ -588,7 +588,7 @@ export const translations = {
         {
           id: 'river-col',
           name: 'Complex "RIVER-COL"',
-          location: 'Kyiv region, Makariv district, Kolonshchyna village council',
+          location: 'Bucha district, Makariv community, Kolonshchyna village council',
           description: 'Large-scale project of 25.00 Ha with a unique water concept. The central element is a 1132m long channel and a "Relax Island". Infrastructure includes "SPA-WORLD" complex, sports zones, and diverse housing formats: from capsule houses by the water to helio-domes. The project is oriented towards 100% business use (entertainment complex). Potential capitalization $55.4M.',
           area: '25.00 Ha',
           price: '$875,000',
@@ -600,7 +600,7 @@ export const translations = {
         {
           id: 'country-residence',
           name: 'Complex "COUNTRY RESIDENCE"',
-          location: 'Kyiv region, Makariv district, Kolonshchyna village council',
+          location: 'Bucha district, Makariv community, Kolonshchyna village council',
           description: 'Southernmost part of the complex. Club format: 22 elite households with private access to the channel. Land plot 13.73 Ha with restored natural reservoir. Each investor gets 35 sotkas of land, a house, and a private part of the lake. Ideal place for a country residence with an exotic garden. Capitalization $14.4M.',
           area: '13.73 Ha',
           price: '$481,000',
@@ -612,7 +612,7 @@ export const translations = {
         {
           id: 'cascade-lakes',
           name: 'Complex "CASCADE of LAKES"',
-          location: 'Kyiv region, Makariv district, Kolonshchyna village council',
+          location: 'Bucha district, Makariv community, Kolonshchyna village council',
           description: 'Northernmost part of the complex. Land array 28.65 Ha (single plot). Borders State Forest (16,000 Ha). Highlight – three spots of dried natural lakes with high groundwater, allowing creation of artificial lake cascade. 100% Business concept: recreation and entertainment complex. Summer – fishing and catamarans, Winter – ice rinks. Ideal conditions for ATV and snowmobile tours due to forest proximity.',
           area: '28.65 Ha',
           price: '$1,002,750',
@@ -624,7 +624,7 @@ export const translations = {
         {
           id: 'elephant-park',
           name: 'Complex "ELEPHANT PARK"',
-          location: 'Kyiv region, Makariv district, Kolonshchyna village council',
+          location: 'Bucha district, Makariv community, Kolonshchyna village council',
           description: 'Land array 19.00 Ha (9.99 Ha + 8.99 Ha). Central part has high groundwater, allowing for a unique artificial lake (4.48 Ha) with a Relax Island. Right side – 74 recreation houses, Left side – 74 unique architecture houses. Mixed use: 50% recreation, 50% innovative housing. Borders asphalt road, mostly forested.',
           area: '19.00 Ha',
           price: '$1,235,000',
@@ -769,7 +769,7 @@ export const translations = {
       termTitle: 'Термін Реалізації Проекту',
       termValue: '30 – 36 місяців',
       cadastralLink: 'Кадастрова Карта',
-      location: 'Київська область, Макарівський район, Колонщинська сільська рада',
+      location: 'Бучанський район, Макарівська громада, Колонщинська сільська рада',
       infrastructureList: {
         title: 'Інфраструктурні об\'єкти',
         items: [
@@ -807,7 +807,7 @@ export const translations = {
       termTitle: 'Термін Реалізації',
       termValue: '30 – 36 місяців',
       cadastralLink: 'Кадастрова Карта',
-      location: 'Київська область, Макарівський район, Колонщинська сільська рада',
+      location: 'Бучанський район, Макарівська громада, Колонщинська сільська рада',
       infrastructureList: {
         title: 'Інфраструктурні об\'єкти',
         items: [
@@ -845,7 +845,7 @@ export const translations = {
       termTitle: 'Термін Реалізації',
       termValue: '30 – 36 місяців',
       cadastralLink: 'Кадастрова Карта', // Link not provided, will keep generic or omit
-      location: 'Київська область, Макарівський район, Колонщинська сільська рада',
+      location: 'Бучанський район, Макарівська громада, Колонщинська сільська рада',
       // No specific infrastructure list provided other than lake, so adapting
       housingList: {
         title: 'Житлова інфраструктура',
@@ -871,9 +871,9 @@ export const translations = {
       termTitle: 'Термін Реалізації',
       termValue: '30 – 36 місяців',
       cadastralLink: null,
-      location: 'Київська область, Макарівський район, Колонщинська сільська рада',
+      location: 'Бучанський район, Макарівська громада, Колонщинська сільська рада',
       infrastructureList: {
-        title: 'Інфраструктурні об\'єкти (36.75% / 10.52 Га)',
+        title: 'Інфраструктурні об\'єкти',
         items: [
           { name: 'Готельно-ресторанний комплекс з басейном', area: '1,25 Га' },
           { name: 'Об\'єднані спорт. та дитячий майданчик (Теніс, Баскетбол)', area: '0,75 Га' },
@@ -884,7 +884,7 @@ export const translations = {
         ]
       },
       housingList: {
-        title: 'Житлова інфраструктура (34.80% / 9.98 Га)',
+        title: 'Житлова інфраструктура',
         items: [
           { name: 'Капсульні будинки біля озер (42/28 м²)', count: '62 шт.', area: '1,82 Га' },
           { name: 'Модульні будинки (26, 48, 62 м²)', count: '58 шт.', area: '3,48 Га' },
@@ -910,7 +910,7 @@ export const translations = {
       termTitle: 'Термін Реалізації',
       termValue: '36 – 48 місяців',
       cadastralLink: 'Кадастрова Карта',
-      location: 'Київська область, Макарівський район, Колонщинська сільська рада',
+      location: 'Бучанський район, Макарівська громада, Колонщинська сільська рада',
       financials: {
         title: 'Фінансова Характеристика',
         items: [
@@ -950,7 +950,7 @@ export const translations = {
         sections: [
           {
             title: '1. Архітектура Даних',
-            content: 'Uneed Invest Group ставиться до вашої особистої інформації з тією ж точністю та ексклюзивністю, що й до нашої житлової архітектури. Ми збираємо дані виключно для надання послуг консьєржа, продажу та управління нерухомістю. Це включає імена, професійні контактні дані та інвестиційні переваги, надані через наш портал.'
+            content: 'ZEMRESURS ставиться до вашої особистої інформації з тією ж точністю та ексклюзивністю, що й до нашої житлової архітектури. Ми збираємо дані виключно для надання послуг консьєржа, продажу та управління нерухомістю. Це включає імена, професійні контактні дані та інвестиційні переваги, надані через наш портал.'
           },
           {
             title: '2. Протокол Безпеки',
@@ -968,7 +968,7 @@ export const translations = {
         sections: [
           {
             title: '1. Золотий Стандарт',
-            content: 'Користуючись цим порталом, ви погоджуєтеся на найвищі стандарти професійної поведінки. Uneed Invest Group надає інформацію щодо житлових забудов на стадії будівництва та інвестиційних можливостей. Усі візуалізації та концептуальні начерки є ілюстративними та залишаються інтелектуальною власністю забудовника.'
+            content: 'Користуючись цим порталом, ви погоджуєтеся на найвищі стандарти професійної поведінки. ZEMRESURS надає інформацію щодо житлових забудов на стадії будівництва та інвестиційних можливостей. Усі візуалізації та концептуальні начерки є ілюстративними та залишаються інтелектуальною власністю забудовника.'
           },
           {
             title: '2. Відмова від Відповідальності',
@@ -986,7 +986,7 @@ export const translations = {
         sections: [
           {
             title: '1. Використання Cookie',
-            content: 'Щоб покращити ваш досвід на сайті Uneed Invest Group, ми використовуємо файли cookie — невеликі файли даних, що розміщуються на вашому пристрої. Вони допомагають нам зрозуміти ваші вподобання та забезпечити безперебійну роботу інтерактивних карт та відео-фонів.'
+            content: 'Щоб покращити ваш досвід на сайті ZEMRESURS, ми використовуємо файли cookie — невеликі файли даних, що розміщуються на вашому пристрої. Вони допомагають нам зрозуміти ваші вподобання та забезпечити безперебійну роботу інтерактивних карт та відео-фонів.'
           },
           {
             title: '2. Аналітична Досконалість',
@@ -1010,7 +1010,7 @@ export const translations = {
       badge: 'Філософія бренду',
       title1: 'ЕКСПЕРТИЗА',
       title2: 'У КОЖНІЙ СОТЦІ.',
-      description: 'Uneed Invest Group не просто продає землю. Ми створюємо екосистему для примноження капіталу.',
+      description: 'ZEMRESURS не просто продає землю. Ми створюємо екосистему для примноження капіталу.',
       longDescription: 'Наша команда аналізує сотні гектарів, вивчає плани розвитку громад та інфраструктурні проекти, щоб запропонувати вам лише ті активи, які гарантовано зростуть у ціні. Ми перетворюємо хаотичний ринок землі на зрозумілий фінансовий інструмент.',
       heroImage: elephantParkImg,
       stats: [
@@ -1217,7 +1217,7 @@ export const translations = {
         {
           id: 'col-town',
           name: 'Комплекс "COL-TOWN"',
-          location: 'Київська область, Макарівський район, Колонщинська сільська рада',
+          location: 'Бучанський район, Макарівська громада, Колонщинська сільська рада',
           description: 'Унікальна інвестиційна можливість, що об\'єднує три земельні ділянки (3,63 Га, 1,9 Га та 1,90 Га) загальною площею 7,43 Га. Ландшафт вражає балансом: 3,63 Га густого лісу та 3,8 Га рельєфної місцевості (Пагорб). До складу комплексу входить масштабна інфраструктура: банний комплекс із зовнішнім басейном (0,55 Га), спортивні та дитячі майданчики (0,75 Га), дитячий садок та комерційний блок (магазин, кав\'ярня, аптека). Житлова зона включає 37 модульних будинків для оренди та 37 будинків терасного типу новітньої архітектури. Передбачено ангар для спецтехніки та резервну генерацію. Потенціальна капіталізація проекту: $14,415 млн.',
           area: '7.43 Га',
           price: '$481 000',
@@ -1229,7 +1229,7 @@ export const translations = {
         {
           id: 'river-col',
           name: 'Комплекс "RIVER-COL"',
-          location: 'Київська область, Макарівський район, Колонщинська сільська рада',
+          location: 'Бучанський район, Макарівська громада, Колонщинська сільська рада',
           description: 'Масштабний проект площею 25.00 Га з унікальною водною концепцією. Центральним елементом є канал довжиною 1132 м та "Острів Релаксу". Інфраструктура включає SPA-комплекс "SPA-WORLD", спортивні зони, та різноманітні формати житла: від капсульних будинків біля води до геліо-куполів. Проект орієнтований на 100% бізнес-використання (розважальний комплекс). Потенційна капіталізація $55.4 млн.',
           area: '25.00 Га',
           price: '$875 000',
@@ -1241,7 +1241,7 @@ export const translations = {
         {
           id: 'country-residence',
           name: 'Комплекс "COUNTRY RESIDENCE"',
-          location: 'Київська область, Макарівський район, Колонщинська сільська рада',
+          location: 'Бучанський район, Макарівська громада, Колонщинська сільська рада',
           description: 'Найпівденніша частина комплексу. Клубний формат: 22 елітних домоволодіння з власним виходом до каналу. Земельна ділянка 13.73 Га з відродженою природною водоймою. Кожен інвестор отримує 35 соток землі, будинок та приватну частину озера. Ідеальне місце для заміської резиденції з садом екзотичних рослин. Капіталізація $14.4 млн.',
           area: '13.73 Га',
           price: '$481 000',
@@ -1253,7 +1253,7 @@ export const translations = {
         {
           id: 'cascade-lakes',
           name: 'Комплекс "CASCADE of LAKES"',
-          location: 'Київська область, Макарівський район, Колонщинська сільська рада',
+          location: 'Бучанський район, Макарівська громада, Колонщинська сільська рада',
           description: 'Найпівнічніша частина комплексу. Земельний масив 28.65 Га (однією ділянкою). Межує з ДержЛісГосподом (16 000 Га). Родзинка – три плями висохших природніх озер з високими грунтовими водами, що дозволяє створити каскад штучних водойм. Концепція 100% бізнес: відпочинково-розважальний комплекс. Влітку – рибалка та катамарани, взимку – ковзанки. Ідеальні умови для покатушок на квадроциклах та снігоходах завдяки сусідству з лісом.',
           area: '28.65 Га',
           price: '$1 002 750',
@@ -1265,7 +1265,7 @@ export const translations = {
         {
           id: 'elephant-park',
           name: 'Комплекс "ELEPHANT PARK"',
-          location: 'Київська область, Макарівський район, Колонщинська сільська рада',
+          location: 'Бучанський район, Макарівська громада, Колонщинська сільська рада',
           description: 'Земельний масив 19.00 Га (9.99 Га + 8.99 Га). Центральна частина – зона з високими грунтовими водами для створення унікального штучного озера (4.48 Га) з островом релаксу. Справа – 74 відпочинкові будинки, зліва – 74 будинки унікальної архітектури. Змішана форма використання: 50% розваги, 50% інноваційне житло. Примикає до асфальтованої дороги, переважно заліснений.',
           area: '19.00 Га',
           price: '$1 235 000',
