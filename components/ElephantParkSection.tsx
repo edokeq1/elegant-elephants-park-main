@@ -34,14 +34,14 @@ export const ElephantParkSection: React.FC<ElephantParkSectionProps> = ({ t }) =
 
                 <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 lg:gap-24">
                     {/* Left Column: Description & Image */}
-                    <div className={`space-y-12 transition-all duration-1000 delay-300 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
-                        <div className="aspect-[4/3] rounded-[40px] overflow-hidden relative group border border-white/10">
+                    <div className="space-y-12">
+                        <div className={`aspect-[4/3] rounded-[40px] overflow-hidden relative group border border-white/10 transition-all duration-1000 delay-[400ms] transform ${isVisible ? 'translate-y-0 opacity-100 scale-100' : 'translate-y-10 opacity-0 scale-95'}`}>
                             <LazyImage
                                 src={elephantParkImage}
                                 alt="Elephant Park"
-                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 group-hover:contrast-110 group-hover:brightness-105 group-hover:saturate-110 opacity-80 group-hover:opacity-100"
+                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105"
                             />
-                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-80" />
+                            <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-60 group-hover:opacity-80 transition-opacity duration-1000" />
                             <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 text-white">
                                 <div className="flex items-center gap-2 mb-2">
                                     <MapPin className="w-5 h-5 text-brand-accent" />
@@ -50,13 +50,13 @@ export const ElephantParkSection: React.FC<ElephantParkSectionProps> = ({ t }) =
                             </div>
                         </div>
 
-                        <div className="space-y-6 text-lg md:text-xl font-light leading-relaxed text-gray-300">
+                        <div className={`space-y-6 text-lg md:text-xl font-light leading-relaxed text-gray-300 transition-all duration-1000 delay-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
                             <p>{t.description}</p>
                             <p className="font-medium text-brand-accent">{t.infrastructure}</p>
                         </div>
 
                         {/* Cadastral Link */}
-                        <div className="flex flex-col sm:flex-row gap-4">
+                        <div className={`flex flex-col sm:flex-row gap-4 transition-all duration-1000 delay-[600ms] transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
                             <a
                                 href="https://kadastrova-karta.com/dilyanka/3222782600:06:005:0190"
                                 target="_blank"
