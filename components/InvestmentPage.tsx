@@ -121,7 +121,7 @@ export const InvestmentPage: React.FC<InvestmentPageProps> = ({ onBack, onNaviga
         </div>
 
         {/* Closing trust block */}
-        <div className="rounded-[50px] bg-brand-charcoal/40 border border-white/5 p-12 md:p-20 flex flex-col md:flex-row items-center gap-12 opacity-0 animate-reveal-up stagger-4">
+        <div className="rounded-[50px] bg-brand-charcoal/40 border border-white/5 p-12 md:p-20 flex flex-col md:flex-row items-center gap-12 opacity-0 animate-reveal-up stagger-4 shadow-2xl shadow-black/50">
           <div className="flex-1 space-y-6">
             <h4 className="text-3xl font-light uppercase tracking-tighter">{t.investment.trust.title}</h4>
             <p className="text-gray-400 font-light leading-relaxed">

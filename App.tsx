@@ -19,6 +19,8 @@ import { CascadeLakesSection } from './components/CascadeLakesSection';
 import { ElephantParkSection } from './components/ElephantParkSection';
 import { IntroVideo } from './components/IntroVideo';
 import { translations, Language } from './translations';
+import { FAQSection } from './components/FAQSection';
+import { NoiseOverlay } from './components/NoiseOverlay';
 
 
 type AppPage = 'home' | 'contact' | 'privacy' | 'terms' | 'cookie' | 'about' | 'objects' | 'map' | 'masterplan' | 'investment';
@@ -121,6 +123,7 @@ function App() {
 
   return (
     <main className="w-full min-h-screen relative font-sans text-white bg-brand-dark overflow-x-hidden flex flex-col">
+      <NoiseOverlay />
       <Navbar onNavigate={handleNavigate} t={t.nav} currentLang={lang} onLanguageChange={setLang} />
 
       <div className="flex-grow flex flex-col">
@@ -134,6 +137,7 @@ function App() {
               <CountryResidenceSection t={t.countryResidence} />
               <CascadeLakesSection t={t.cascadeLakes} />
               <ElephantParkSection t={t.elephantPark} />
+              <FAQSection t={t.faq} />
 
               {/* Map Widget - Updated to use dark theme if needed, or keep as is */}
             </>

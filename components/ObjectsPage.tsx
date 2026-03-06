@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { ArrowLeft, MapPin, Maximize2, Navigation, Layers, ShieldCheck, TreePine, Truck, Home, Box, Globe, Sparkles } from 'lucide-react';
 import { ImageViewer } from './ImageViewer';
+import { LazyImage } from './LazyImage';
 
 interface ObjectsPageProps {
   onBack: () => void;
@@ -106,10 +107,10 @@ export const ObjectsPage: React.FC<ObjectsPageProps> = ({ onBack, onShowMap, t, 
               onClick={() => setIsImageViewerOpen(true)}
             >
               {selectedObject.image ? (
-                <img
+                <LazyImage
                   src={selectedObject.image}
                   alt={selectedObject.name}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-1000"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 group-hover:brightness-110 transition-all duration-1000"
                 />
               ) : (
                 <>
@@ -173,10 +174,10 @@ export const ObjectsPage: React.FC<ObjectsPageProps> = ({ onBack, onShowMap, t, 
               <div className="space-y-6">
                 <div className="aspect-[4/3] rounded-2xl bg-brand-dark/40 border border-white/5 relative overflow-hidden group-hover:border-brand-accent/10 transition-colors">
                   {obj.image ? (
-                    <img
+                    <LazyImage
                       src={obj.image}
                       alt={obj.name}
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 transition-all duration-700"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 group-hover:brightness-110 transition-all duration-700"
                     />
                   ) : (
                     <div className="absolute inset-0 flex items-center justify-center">

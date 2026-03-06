@@ -29,8 +29,8 @@ export const IntroVideo: React.FC<{ t: any }> = ({ t }) => {
             <div className="absolute inset-0 bg-black/20" />
 
             {/* Content Overlay */}
-            <div className="absolute inset-0 flex flex-col justify-center items-center z-20 px-6 text-center">
-                <div className="max-w-4xl mx-auto flex flex-col gap-10 md:gap-14 animate-reveal-up stagger-1">
+            <div className="absolute inset-0 flex flex-col justify-center items-center z-20 px-6 pt-24 pb-12 text-center overflow-y-auto">
+                <div className="max-w-4xl mx-auto flex flex-col gap-6 md:gap-14 animate-reveal-up stagger-1 min-h-min my-auto">
 
                     {/* Partners Text - Moved to Top */}
                     <div className="mb-2 opacity-90 animate-pulse-slow px-2">
@@ -53,11 +53,11 @@ export const IntroVideo: React.FC<{ t: any }> = ({ t }) => {
                     </div>
 
                     {/* Investment Term */}
-                    <div className="flex flex-col gap-3 glass-panel p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm">
-                        <div className="text-xs md:text-sm font-bold uppercase tracking-[0.2em] text-brand-accent-light">
+                    <div className="flex flex-col gap-1 md:gap-3 glass-panel p-4 md:p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-xl shadow-black/40">
+                        <div className="text-[10px] md:text-sm font-bold uppercase tracking-[0.2em] text-brand-accent-light">
                             {t.intro.minTermLabel}
                         </div>
-                        <div className="text-2xl md:text-4xl font-light font-heading tracking-tight">
+                        <div className="text-xl md:text-4xl font-light font-heading tracking-tight leading-tight">
                             {t.intro.term.replace(' - ', ' ')}
                         </div>
                     </div>
@@ -76,7 +76,7 @@ export const IntroVideo: React.FC<{ t: any }> = ({ t }) => {
                                 );
                             }
                             return (
-                                <div className="text-4xl md:text-6xl font-black tracking-tight text-white drop-shadow-lg">
+                                <div className="text-3xl md:text-6xl font-black tracking-tight text-white drop-shadow-lg leading-tight">
                                     {t.intro.price}
                                 </div>
                             );

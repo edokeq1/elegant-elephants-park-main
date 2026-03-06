@@ -1,6 +1,7 @@
 import React, { useEffect, useState, useMemo, useCallback, useRef } from 'react';
 import { ArrowLeft, MapPin, Maximize2, X, Navigation, Phone, ExternalLink } from 'lucide-react';
 import { ImageViewer } from './ImageViewer';
+import { LazyImage } from './LazyImage';
 import { MapContainer, TileLayer, Marker, Popup, ZoomControl, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -183,11 +184,10 @@ const PropertyCard = ({
     <div className={`${containerClass} bg-brand-dark text-white rounded-[32px] overflow-hidden border border-white/10 shadow-3xl flex flex-col items-center text-center`}>
       <div className="aspect-video bg-white/5 rounded-2xl mb-4 flex items-center justify-center relative group overflow-hidden w-full">
         {property.image ? (
-          <img
+          <LazyImage
             src={property.image}
-            className="absolute inset-0 w-full h-full object-cover transition-opacity"
+            className="absolute inset-0 w-full h-full object-cover transition-opacity group-hover:scale-110 group-hover:brightness-110 duration-700"
             alt={property.name}
-            loading="lazy"
           />
         ) : (
           <MapPin className="w-12 h-12 text-brand-accent/20 group-hover:scale-110 transition-transform duration-700" />
@@ -341,11 +341,10 @@ const PropertyModal = ({
               onClick={() => setIsImageViewerOpen(true)}
             >
               {property.image ? (
-                <img
+                <LazyImage
                   src={property.image}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 transition-all duration-1000"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 group-hover:brightness-110 transition-all duration-1000"
                   alt={property.name}
-                  loading="lazy"
                 />
               ) : (
                 <div className="absolute inset-0 flex items-center justify-center">

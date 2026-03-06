@@ -31,7 +31,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, t, currentLang, onLa
   return (
     <nav className="absolute top-0 left-0 right-0 z-50 w-full text-white pointer-events-none">
       {/* Top bar for mobile and desktop */}
-      <div className="flex lg:grid lg:grid-cols-[1fr_auto_1fr] items-center px-6 py-4 md:px-12 bg-gradient-to-b from-brand-dark/95 via-brand-dark/50 to-transparent pointer-events-auto gap-4">
+      <div className="flex justify-between items-center px-4 md:px-8 xl:px-12 py-4 bg-gradient-to-b from-brand-dark/95 via-brand-dark/50 to-transparent pointer-events-auto gap-2">
 
         {/* Mobile: Menu Toggle (Hidden at XL) | Desktop: Contact */}
         <div className="flex flex-1 items-center min-w-[50px]">
@@ -45,7 +45,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, t, currentLang, onLa
           <div className="hidden xl:flex flex-col items-start pointer-events-auto">
             <button
               onClick={() => handleNavigate('contact')}
-              className="text-xs font-black tracking-[0.3em] text-brand-accent hover:text-white transition-all uppercase border-b border-brand-accent/0 hover:border-white pb-1 whitespace-nowrap"
+              className="text-[10px] 2xl:text-[12px] font-black tracking-[0.1em] 2xl:tracking-[0.3em] text-brand-accent hover:text-white transition-all uppercase border-b border-brand-accent/0 hover:border-white pb-1 whitespace-nowrap"
             >
               {t.contact}
             </button>
@@ -54,16 +54,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, t, currentLang, onLa
 
         {/* Center: Logo */}
         <div
-          className="pointer-events-auto flex justify-center cursor-pointer transition-transform hover:scale-105 active:scale-95 shrink-0 mx-4"
+          className="pointer-events-auto flex justify-center cursor-pointer transition-transform hover:scale-105 active:scale-95 mx-2 xl:mx-8 xl:absolute xl:left-1/2 xl:-translate-x-1/2 z-10"
           onClick={() => handleNavigate('home')}
         >
           <Logo />
         </div>
 
         {/* Right: Actions */}
-        <div className="flex items-center gap-3 min-[1800px]:gap-6 pointer-events-auto flex-1 justify-end min-w-[50px]">
+        <div className="flex items-center gap-2 2xl:gap-4 min-[1800px]:gap-6 pointer-events-auto flex-1 justify-end min-w-[50px] relative z-20">
           {/* Desktop Nav */}
-          <div className="hidden xl:flex items-center gap-3 min-[1800px]:gap-6 text-[9px] min-[1800px]:text-[10px] font-black tracking-[0.1em] min-[1800px]:tracking-[0.3em] uppercase">
+          <div className="hidden xl:flex items-center gap-3 2xl:gap-5 min-[1800px]:gap-6 text-[10px] 2xl:text-[12px] min-[1800px]:text-[14px] font-black tracking-normal 2xl:tracking-[0.1em] min-[1800px]:tracking-[0.2em] uppercase">
             <button onClick={() => handleNavigate('objects')} className="relative group hover:text-brand-accent transition-colors duration-300 whitespace-nowrap">
               {t.objects}
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
@@ -89,7 +89,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, t, currentLang, onLa
           <div className="h-4 w-[1px] bg-white/10 hidden xl:block"></div>
 
           {/* Language Switcher */}
-          <div className="flex items-center space-x-2 md:space-x-3 text-[10px] font-black tracking-[0.2em] shrink-0">
+          <div className="flex items-center space-x-2 md:space-x-3 text-[10px] 2xl:text-[12px] font-black tracking-[0.1em] 2xl:tracking-[0.2em] shrink-0">
             <button
               onClick={() => onLanguageChange('en')}
               className={`transition-all duration-300 border-b-2 ${currentLang === 'en' ? 'text-brand-accent border-brand-accent' : 'text-gray-500 border-transparent hover:text-white'}`}

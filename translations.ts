@@ -645,6 +645,28 @@ export const translations = {
       modalBadge: 'Investment Opportunity',
       modalDescription: 'Description',
       bookConsultation: 'Book Consultation',
+    },
+    faq: {
+      badge: 'Knowledge Base',
+      title: 'Frequently Asked Questions',
+      items: [
+        {
+          question: 'What are the main risks associated with investing in land assets at ZEMRESURS?',
+          answer: 'All our land assets undergo rigorous legal and ecological audits before being offered. The primary risk in any real estate investment is market fluctuation, but by securing tangible land with clear development potential at the Gates of Kyiv, we minimize speculative risks. Our models project resilient capitalization regardless of short-term economic shifts.'
+        },
+        {
+          question: 'How is the investment agreement legally structured?',
+          answer: 'Investments are structured through direct ownership or shares in a dedicated corporate entity holding the land asset, depending on your residency and investment echelon. All agreements are processed by our specialized legal team ensuring 100% compliance with Ukrainian law and international investment protection standards.'
+        },
+        {
+          question: 'Can I monitor the progress of my investment and the surrounding infrastructure?',
+          answer: 'Absolutely. Club and Strategic investors receive quarterly progress reports, including video drone footage of the site, infrastructure development updates, and revised capitalization models based on current market data.'
+        },
+        {
+          question: 'Is it possible to exit the investment before the 3-year minimum term?',
+          answer: 'While our models are based on a minimum 3-year term for optimal capitalization, Echelon 1 and 2 investors have secondary market options. ZEMRESURS maintains a waiting list of buyers and can facilitate an early exit, albeit potentially at a lower yield than the full-term projection.'
+        }
+      ]
     }
   },
   ua: {
@@ -1286,6 +1308,28 @@ export const translations = {
       modalBadge: 'Інвестиційна Можливість',
       modalDescription: 'Опис',
       bookConsultation: 'Консультація',
+    },
+    faq: {
+      badge: 'База Знань',
+      title: 'Поширені Запитання',
+      items: [
+        {
+          question: 'Які основні ризики пов’язані з інвестуванням у земельні активи ЗЕМРЕСУРС?',
+          answer: 'Усі наші земельні активи проходять суворий юридичний та екологічний аудит. Основний ризик у будь-якій нерухомості — це коливання ринку, але, купуючи реальну землю з чітким планом розвитку біля воріт Києва, ми мінімізуємо спекулятивні ризики. Наші моделі прогнозують стабільну капіталізацію незалежно від короткострокових економічних змін.'
+        },
+        {
+          question: 'Як юридично оформлюється інвестиційна угода?',
+          answer: 'Інвестиції оформлюються через пряме право власності або частки у спеціалізованій юридичній особі, що володіє активом, залежно від вашого статусу та ешелону. Усі угоди супроводжуються нашою юридичною командою з гарантією 100% відповідності законодавству України.'
+        },
+        {
+          question: 'Чи можу я відстежувати прогрес моєї інвестиції та розбудову інфраструктури?',
+          answer: 'Абсолютно. Інвестори Клубного та Стратегічного рівнів отримують щоквартальні звіти, що включають відео з дронів, оновлення щодо розбудови інфраструктури та переглянуті моделі капіталізації на основі поточних ринкових даних.'
+        },
+        {
+          question: 'Чи можливо вийти з інвестиції до закінчення мінімального терміну у 3 роки?',
+          answer: 'Хоча наші моделі розраховані мінімум на 3 роки для оптимальної прибутковості, інвестори 1 і 2 ешелонів мають опції вторинного ринку. ZEMRESURS веде лист очікування покупців і може сприяти достроковому виходу, хоч і з потенційно меншою прибутковістю.'
+        }
+      ]
     }
   }
 };

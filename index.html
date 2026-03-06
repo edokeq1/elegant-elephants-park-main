@@ -96,6 +96,20 @@
       .stagger-6 { animation-delay: 0.6s; }
       .stagger-7 { animation-delay: 0.7s; }
       .stagger-8 { animation-delay: 0.8s; }
+
+      @keyframes noise-anim {
+        0% { transform: translate(0, 0); }
+        10% { transform: translate(-1%, -1%); }
+        20% { transform: translate(1%, 2%); }
+        30% { transform: translate(-2%, 1%); }
+        40% { transform: translate(1%, -1%); }
+        50% { transform: translate(-1%, 2%); }
+        60% { transform: translate(2%, -2%); }
+        70% { transform: translate(-2%, -1%); }
+        80% { transform: translate(1%, 1%); }
+        90% { transform: translate(-1%, -2%); }
+        100% { transform: translate(0, 0); }
+      }
     </style>
   <script type="importmap">
 {

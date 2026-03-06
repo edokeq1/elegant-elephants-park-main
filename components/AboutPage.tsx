@@ -1,5 +1,6 @@
 import React from 'react';
 import { ArrowLeft, Target, Eye, History, Sparkles, Wind, Coffee, UtensilsCrossed, Heart, TreePine, Sparkle } from 'lucide-react';
+import { LazyImage } from './LazyImage';
 
 interface AboutPageProps {
   onBack: () => void;
@@ -63,10 +64,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack, t }) => {
           <div className="relative aspect-square opacity-0 animate-reveal-up stagger-3 hidden lg:block">
             <div className="absolute inset-0 bg-brand-accent/20 rounded-[40px] rotate-3 blur-2xl opacity-50" />
             <div className="relative h-full bg-brand-dark/40 border border-white/10 rounded-[40px] flex items-center justify-center overflow-hidden group shadow-2xl">
-              <img
+              <LazyImage
                 src={t.heroImage}
                 alt="Luxury Forest Architecture"
-                className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000"
+                className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:brightness-110 group-hover:scale-110 transition-all duration-1000"
               />
               <div className="absolute inset-x-0 bottom-0 p-12 bg-gradient-to-t from-brand-dark via-brand-dark/60 to-transparent text-center">
                 <p className="text-[10px] uppercase tracking-[0.5em] text-brand-accent font-black drop-shadow-lg">ZEMRESURS</p>
@@ -122,10 +123,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack, t }) => {
               </div>
             </div>
             <div className="lg:w-1/2 relative aspect-square rounded-[60px] overflow-hidden border border-white/10 group shadow-2xl">
-              <img
+              <LazyImage
                 src={t.ideology.image}
                 alt="Protected Forest"
-                className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000"
+                className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:brightness-110 group-hover:scale-110 transition-all duration-1000"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-brand-accent/20 to-transparent opacity-30 group-hover:opacity-0 transition-opacity duration-1000" />
               <div className="absolute inset-x-0 bottom-0 p-12 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent">
@@ -152,10 +153,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack, t }) => {
               {t.lifestyle.gastronomy.items.map((item: any, i: number) => (
                 <div key={i} className="rounded-[40px] bg-white/[0.02] border border-white/5 hover:bg-white/[0.04] hover:border-brand-accent/20 transition-all group overflow-hidden flex flex-col">
                   <div className="h-64 relative overflow-hidden">
-                    <img
+                    <LazyImage
                       src={item.image}
                       alt={item.name}
-                      className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000"
+                      className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 group-hover:brightness-110 group-hover:scale-110 transition-all duration-1000"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent" />
                     <div className="absolute top-6 right-6 z-10">
@@ -188,12 +189,12 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack, t }) => {
             </div>
             <div className="grid md:grid-cols-2 gap-8">
               {t.lifestyle.wellness.items.map((item: any, i: number) => (
-                <div key={i} className="rounded-[40px] bg-brand-charcoal/30 border border-white/5 hover:border-brand-accent/30 transition-all group overflow-hidden flex flex-col">
+                <div key={i} className="rounded-[40px] bg-brand-charcoal/30 border border-white/5 hover:border-brand-accent/30 transition-all group overflow-hidden flex flex-col shadow-2xl shadow-black/40">
                   <div className="h-64 relative overflow-hidden">
-                    <img
+                    <LazyImage
                       src={item.image}
                       alt={item.name}
-                      className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000"
+                      className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 group-hover:brightness-110 group-hover:scale-110 transition-all duration-1000"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent" />
                     <div className="absolute top-6 right-6 z-10">
@@ -228,10 +229,10 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack, t }) => {
               {t.lifestyle.recreation.items.map((item: any, i: number) => (
                 <div key={i} className="rounded-[40px] bg-white/[0.02] border border-white/5 hover:bg-white/[0.04] hover:border-brand-accent/20 transition-all group overflow-hidden flex flex-col">
                   <div className="h-64 relative overflow-hidden">
-                    <img
+                    <LazyImage
                       src={item.image}
                       alt={item.name}
-                      className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 group-hover:scale-110 transition-all duration-1000"
+                      className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 group-hover:brightness-110 group-hover:scale-110 transition-all duration-1000"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent" />
                     <div className="absolute top-6 right-6 z-10">

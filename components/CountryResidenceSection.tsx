@@ -1,7 +1,8 @@
 import React, { useRef } from 'react';
 import { MapPin, TrendingUp, Anchor, ExternalLink, TreeDeciduous } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
-import countryResidenceImage from '../photo/3.png';
+import countryResImage from '../photo/3.png';
+import { LazyImage } from './LazyImage';
 
 interface CountryResidenceSectionProps {
     t: any;
@@ -35,10 +36,10 @@ export const CountryResidenceSection: React.FC<CountryResidenceSectionProps> = (
                     {/* Left Column: Description & Image */}
                     <div className={`space-y-12 transition-all duration-1000 delay-300 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
                         <div className="aspect-[4/3] rounded-[40px] overflow-hidden relative group border border-white/10">
-                            <img
-                                src={countryResidenceImage}
+                            <LazyImage
+                                src={countryResImage}
                                 alt="Country Residence"
-                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 group-hover:brightness-110 opacity-80 group-hover:opacity-100"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-80" />
                             <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 text-white">
@@ -74,7 +75,7 @@ export const CountryResidenceSection: React.FC<CountryResidenceSectionProps> = (
                     <div className={`space-y-8 transition-all duration-1000 delay-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
 
                         {/* Financial Card */}
-                        <div className="p-8 md:p-12 bg-white/5 rounded-[40px] border border-white/10 space-y-8 backdrop-blur-sm">
+                        <div className="p-8 md:p-12 bg-white/5 rounded-[40px] border border-white/10 space-y-8 backdrop-blur-sm shadow-2xl shadow-black/40">
                             <div className="space-y-4">
                                 <div className="flex items-center gap-3 text-brand-accent">
                                     <TrendingUp className="w-6 h-6" />
@@ -104,7 +105,7 @@ export const CountryResidenceSection: React.FC<CountryResidenceSectionProps> = (
 
                             <div className="grid grid-cols-1 gap-6">
                                 {/* Lake */}
-                                <div className="group p-6 rounded-3xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
+                                <div className="group p-6 rounded-3xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors shadow-xl shadow-black/30 hover:shadow-2xl hover:shadow-brand-accent/20">
                                     <div className="flex items-start justify-between mb-4">
                                         <div className="p-3 rounded-2xl bg-brand-accent/10 text-brand-accent">
                                             <Anchor className="w-6 h-6" />
@@ -128,7 +129,7 @@ export const CountryResidenceSection: React.FC<CountryResidenceSectionProps> = (
                                 </h4>
                                 <div className="grid grid-cols-1 gap-3">
                                     {t.housingList.items.map((item: any, i: number) => (
-                                        <div key={i} className="flex items-center justify-between p-4 bg-white/5 rounded-2xl border border-white/5 hover:bg-white/10 transition-colors">
+                                        <div key={i} className="flex items-center justify-between p-4 bg-white/5 rounded-2xl border border-white/5 hover:bg-white/10 transition-colors shadow-lg shadow-black/20">
                                             <span className="text-gray-300 text-sm font-light flex-1 mr-4">{item.name}</span>
                                             <div className="text-right">
                                                 <span className="block text-brand-accent font-bold text-sm whitespace-nowrap">{item.count}</span>

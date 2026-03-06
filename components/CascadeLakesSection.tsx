@@ -1,6 +1,8 @@
 import React, { useRef } from 'react';
 import { MapPin, TrendingUp, Anchor, ExternalLink, Mountain } from 'lucide-react';
 import { useScrollAnimation } from '../hooks/useScrollAnimation';
+import cascadeLakesImage from '../photo/4.jpg';
+import { LazyImage } from './LazyImage';
 
 interface CascadeLakesSectionProps {
     t: any;
@@ -34,10 +36,10 @@ export const CascadeLakesSection: React.FC<CascadeLakesSectionProps> = ({ t }) =
                     {/* Left Column: Description & Image */}
                     <div className={`space-y-12 transition-all duration-1000 delay-300 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
                         <div className="aspect-[4/3] rounded-[40px] overflow-hidden relative group border border-white/10">
-                            <img
-                                src="https://images.unsplash.com/photo-1516481265257-97e5f4bc50d5?auto=format&fit=crop&q=80"
-                                alt="Cascade of Lakes"
-                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 opacity-80 group-hover:opacity-100"
+                            <LazyImage
+                                src={cascadeLakesImage}
+                                alt="Cascade Lakes"
+                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 group-hover:brightness-110 opacity-80 group-hover:opacity-100"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-80" />
                             <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 text-white">
@@ -73,7 +75,7 @@ export const CascadeLakesSection: React.FC<CascadeLakesSectionProps> = ({ t }) =
                     <div className={`space-y-8 transition-all duration-1000 delay-500 transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-20 opacity-0'}`}>
 
                         {/* Financial Card */}
-                        <div className="p-8 md:p-12 bg-white/5 rounded-[40px] border border-white/10 space-y-8 backdrop-blur-sm">
+                        <div className="p-8 md:p-12 bg-white/5 rounded-[40px] border border-white/10 space-y-8 backdrop-blur-sm shadow-2xl shadow-black/40">
                             <div className="space-y-4">
                                 <div className="flex items-center gap-3 text-brand-accent">
                                     <TrendingUp className="w-6 h-6" />
@@ -103,7 +105,7 @@ export const CascadeLakesSection: React.FC<CascadeLakesSectionProps> = ({ t }) =
 
                             <div className="grid grid-cols-1 gap-6">
                                 {/* Lake */}
-                                <div className="group p-6 rounded-3xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors">
+                                <div className="group p-6 rounded-3xl bg-white/5 border border-white/5 hover:bg-white/10 transition-colors shadow-xl shadow-black/30 hover:shadow-2xl hover:shadow-brand-accent/20">
                                     <div className="flex items-start justify-between mb-4">
                                         <div className="p-3 rounded-2xl bg-brand-accent/10 text-brand-accent">
                                             <Anchor className="w-6 h-6" />
@@ -127,7 +129,7 @@ export const CascadeLakesSection: React.FC<CascadeLakesSectionProps> = ({ t }) =
                                 </h4>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                                     {t.infrastructureList.items.map((item: any, i: number) => (
-                                        <div key={i} className="flex flex-col justify-center p-3 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
+                                        <div key={i} className="flex flex-col justify-center p-3 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 transition-colors shadow-lg shadow-black/20">
                                             <div className="flex justify-between items-start mb-1">
                                                 <span className="text-gray-300 text-xs font-light leading-tight pr-2">{item.name}</span>
                                                 <span className="text-brand-accent font-bold text-xs whitespace-nowrap">{item.area}</span>
@@ -147,7 +149,7 @@ export const CascadeLakesSection: React.FC<CascadeLakesSectionProps> = ({ t }) =
                                 </h4>
                                 <div className="grid grid-cols-1 sm:grid-cols-2 gap-2">
                                     {t.housingList.items.map((item: any, i: number) => (
-                                        <div key={i} className="flex flex-col justify-center p-3 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 transition-colors">
+                                        <div key={i} className="flex flex-col justify-center p-3 bg-white/5 rounded-xl border border-white/5 hover:bg-white/10 transition-colors shadow-lg shadow-black/20">
                                             <div className="flex justify-between items-start mb-1">
                                                 <span className="text-gray-300 text-xs font-light leading-tight pr-2">{item.name}</span>
                                                 <span className="text-brand-accent font-bold text-xs whitespace-nowrap">{item.count}</span>
