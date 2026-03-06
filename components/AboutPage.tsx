@@ -67,7 +67,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack, t }) => {
               <LazyImage
                 src={t.heroImage}
                 alt="Luxury Forest Architecture"
-                className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:brightness-110 group-hover:scale-110 transition-all duration-1000"
+                className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:contrast-110 group-hover:brightness-105 group-hover:saturate-110 group-hover:scale-110 transition-all duration-1000"
               />
               <div className="absolute inset-x-0 bottom-0 p-12 bg-gradient-to-t from-brand-dark via-brand-dark/60 to-transparent text-center">
                 <p className="text-[10px] uppercase tracking-[0.5em] text-brand-accent font-black drop-shadow-lg">ZEMRESURS</p>
@@ -126,7 +126,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack, t }) => {
               <LazyImage
                 src={t.ideology.image}
                 alt="Protected Forest"
-                className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:brightness-110 group-hover:scale-110 transition-all duration-1000"
+                className="absolute inset-0 w-full h-full object-cover opacity-60 group-hover:opacity-100 group-hover:contrast-110 group-hover:brightness-105 group-hover:saturate-110 group-hover:scale-110 transition-all duration-1000"
               />
               <div className="absolute inset-0 bg-gradient-to-br from-brand-accent/20 to-transparent opacity-30 group-hover:opacity-0 transition-opacity duration-1000" />
               <div className="absolute inset-x-0 bottom-0 p-12 bg-gradient-to-t from-brand-dark via-brand-dark/50 to-transparent">
@@ -156,7 +156,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack, t }) => {
                     <LazyImage
                       src={item.image}
                       alt={item.name}
-                      className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 group-hover:brightness-110 group-hover:scale-110 transition-all duration-1000"
+                      className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 group-hover:contrast-110 group-hover:brightness-105 group-hover:saturate-110 group-hover:scale-110 transition-all duration-1000"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent" />
                     <div className="absolute top-6 right-6 z-10">
@@ -194,7 +194,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack, t }) => {
                     <LazyImage
                       src={item.image}
                       alt={item.name}
-                      className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 group-hover:brightness-110 group-hover:scale-110 transition-all duration-1000"
+                      className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 group-hover:contrast-110 group-hover:brightness-105 group-hover:saturate-110 group-hover:scale-110 transition-all duration-1000"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent" />
                     <div className="absolute top-6 right-6 z-10">
@@ -232,7 +232,7 @@ export const AboutPage: React.FC<AboutPageProps> = ({ onBack, t }) => {
                     <LazyImage
                       src={item.image}
                       alt={item.name}
-                      className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 group-hover:brightness-110 group-hover:scale-110 transition-all duration-1000"
+                      className="absolute inset-0 w-full h-full object-cover opacity-50 group-hover:opacity-100 group-hover:contrast-110 group-hover:brightness-105 group-hover:saturate-110 group-hover:scale-110 transition-all duration-1000"
                     />
                     <div className="absolute inset-0 bg-gradient-to-t from-brand-dark via-transparent to-transparent" />
                     <div className="absolute top-6 right-6 z-10">

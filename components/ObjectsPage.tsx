@@ -110,7 +110,7 @@ export const ObjectsPage: React.FC<ObjectsPageProps> = ({ onBack, onShowMap, t, 
                 <LazyImage
                   src={selectedObject.image}
                   alt={selectedObject.name}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 group-hover:brightness-110 transition-all duration-1000"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 group-hover:contrast-110 group-hover:brightness-105 group-hover:saturate-110 transition-all duration-1000"
                 />
               ) : (
                 <>
@@ -177,7 +177,7 @@ export const ObjectsPage: React.FC<ObjectsPageProps> = ({ onBack, onShowMap, t, 
                     <LazyImage
                       src={obj.image}
                       alt={obj.name}
-                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 group-hover:brightness-110 transition-all duration-700"
+                      className="absolute inset-0 w-full h-full object-cover group-hover:scale-110 group-hover:contrast-110 group-hover:brightness-105 group-hover:saturate-110 transition-all duration-700"
                     />
                   ) : (
                     <div className="absolute inset-0 flex items-center justify-center">

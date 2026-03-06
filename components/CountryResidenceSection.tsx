@@ -39,7 +39,7 @@ export const CountryResidenceSection: React.FC<CountryResidenceSectionProps> = (
                             <LazyImage
                                 src={countryResImage}
                                 alt="Country Residence"
-                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 group-hover:brightness-110 opacity-80 group-hover:opacity-100"
+                                className="absolute inset-0 w-full h-full object-cover transition-transform duration-1000 group-hover:scale-105 group-hover:contrast-110 group-hover:brightness-105 group-hover:saturate-110 opacity-80 group-hover:opacity-100"
                             />
                             <div className="absolute inset-0 bg-gradient-to-t from-black/80 to-transparent opacity-80" />
                             <div className="absolute bottom-6 left-6 md:bottom-10 md:left-10 text-white">

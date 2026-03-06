@@ -186,7 +186,7 @@ const PropertyCard = ({
         {property.image ? (
           <LazyImage
             src={property.image}
-            className="absolute inset-0 w-full h-full object-cover transition-opacity group-hover:scale-110 group-hover:brightness-110 duration-700"
+            className="absolute inset-0 w-full h-full object-cover transition-opacity group-hover:scale-110 group-hover:contrast-110 group-hover:brightness-105 group-hover:saturate-110 duration-700"
             alt={property.name}
           />
         ) : (
@@ -343,7 +343,7 @@ const PropertyModal = ({
               {property.image ? (
                 <LazyImage
                   src={property.image}
-                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 group-hover:brightness-110 transition-all duration-1000"
+                  className="absolute inset-0 w-full h-full object-cover group-hover:scale-105 group-hover:contrast-110 group-hover:brightness-105 group-hover:saturate-110 transition-all duration-1000"
                   alt={property.name}
                 />
               ) : (

@@ -11,7 +11,7 @@ export const IntroVideo: React.FC<{ t: any }> = ({ t }) => {
     };
 
     return (
-        <div className="relative w-full h-screen overflow-hidden bg-brand-dark text-white">
+        <div className="relative w-full min-h-[100dvh] overflow-hidden bg-brand-dark text-white flex flex-col">
             {/* Background Video */}
             <video
                 autoPlay
@@ -29,8 +29,8 @@ export const IntroVideo: React.FC<{ t: any }> = ({ t }) => {
             <div className="absolute inset-0 bg-black/20" />
 
             {/* Content Overlay */}
-            <div className="absolute inset-0 flex flex-col justify-center items-center z-20 px-6 pt-24 pb-12 text-center overflow-y-auto">
-                <div className="max-w-4xl mx-auto flex flex-col gap-6 md:gap-14 animate-reveal-up stagger-1 min-h-min my-auto">
+            <div className="relative flex flex-col items-center justify-center z-20 px-6 pt-[120px] pb-24 text-center flex-grow min-h-[100dvh]">
+                <div className="max-w-4xl mx-auto flex flex-col items-center gap-8 md:gap-14 animate-reveal-up stagger-1 w-full">
 
                     {/* Partners Text - Moved to Top */}
                     <div className="mb-2 opacity-90 animate-pulse-slow px-2">

@@ -42,7 +42,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, t, currentLang, onLa
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
 
-          <div className="hidden xl:flex flex-col items-start pointer-events-auto">
+          <div className="hidden lg:flex flex-col items-start pointer-events-auto">
             <button
               onClick={() => handleNavigate('contact')}
               className="text-[10px] 2xl:text-[12px] font-black tracking-[0.1em] 2xl:tracking-[0.3em] text-brand-accent hover:text-white transition-all uppercase border-b border-brand-accent/0 hover:border-white pb-1 whitespace-nowrap"
@@ -54,16 +54,16 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, t, currentLang, onLa
 
         {/* Center: Logo */}
         <div
-          className="pointer-events-auto flex justify-center cursor-pointer transition-transform hover:scale-105 active:scale-95 mx-2 xl:mx-8 xl:absolute xl:left-1/2 xl:-translate-x-1/2 z-10"
+          className="pointer-events-auto flex justify-center items-center cursor-pointer transition-transform hover:scale-105 active:scale-95 mx-2 z-10 shrink-0"
           onClick={() => handleNavigate('home')}
         >
           <Logo />
         </div>
 
         {/* Right: Actions */}
-        <div className="flex items-center gap-2 2xl:gap-4 min-[1800px]:gap-6 pointer-events-auto flex-1 justify-end min-w-[50px] relative z-20">
+        <div className="flex items-center gap-4 lg:gap-6 pointer-events-auto flex-1 justify-end min-w-[50px] relative z-20">
           {/* Desktop Nav */}
-          <div className="hidden xl:flex items-center gap-3 2xl:gap-5 min-[1800px]:gap-6 text-[10px] 2xl:text-[12px] min-[1800px]:text-[14px] font-black tracking-normal 2xl:tracking-[0.1em] min-[1800px]:tracking-[0.2em] uppercase">
+          <div className="hidden lg:flex items-center gap-4 xl:gap-6 text-xs xl:text-sm font-black tracking-widest uppercase">
             <button onClick={() => handleNavigate('objects')} className="relative group hover:text-brand-accent transition-colors duration-300 whitespace-nowrap">
               {t.objects}
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
@@ -86,10 +86,10 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, t, currentLang, onLa
             </button>
           </div>
 
-          <div className="h-4 w-[1px] bg-white/10 hidden xl:block"></div>
+          <div className="h-4 w-[1px] bg-white/20 hidden lg:block"></div>
 
           {/* Language Switcher */}
-          <div className="flex items-center space-x-2 md:space-x-3 text-[10px] 2xl:text-[12px] font-black tracking-[0.1em] 2xl:tracking-[0.2em] shrink-0">
+          <div className="flex items-center space-x-2 md:space-x-3 text-xs xl:text-sm font-black tracking-widest shrink-0">
             <button
               onClick={() => onLanguageChange('en')}
               className={`transition-all duration-300 border-b-2 ${currentLang === 'en' ? 'text-brand-accent border-brand-accent' : 'text-gray-500 border-transparent hover:text-white'}`}
@@ -108,7 +108,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, t, currentLang, onLa
       </div>
 
       {/* Mobile Menu Overlay */}
-      <div className={`fixed inset-0 bg-brand-dark/98 backdrop-blur-2xl z-[200] transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] xl:hidden overflow-y-auto ${isMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-full pointer-events-none'
+      <div className={`fixed inset-0 bg-brand-dark/98 backdrop-blur-2xl z-[200] transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] lg:hidden overflow-y-auto ${isMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-full pointer-events-none'
         }`}>
         <div className="flex flex-col items-center min-h-[100dvh] pt-32 pb-10 gap-8 px-8 relative">
           <button

@@ -69,10 +69,10 @@ export const Hero: React.FC<{ t: any; onNavigate: (page: any) => void }> = ({ t,
       </div>
 
       {/* 4. Main Content (Layer 3) */}
-      <div className="relative z-20 flex flex-col justify-center items-center min-h-screen w-full px-6 text-center pt-24 pb-16 md:pt-32 md:pb-20">
+      <div className="relative z-20 flex flex-col items-center min-h-[100dvh] w-full px-6 text-center pt-32 pb-24 md:pt-[150px] md:pb-32">
 
         {/* Animated Content Group */}
-        <div className="flex flex-col items-center gap-6 md:gap-10 max-w-5xl mx-auto">
+        <div className="flex flex-col items-center gap-6 md:gap-10 max-w-5xl mx-auto my-auto">
 
           {/* Badge */}
           <div className="opacity-0 animate-reveal-up stagger-1">
