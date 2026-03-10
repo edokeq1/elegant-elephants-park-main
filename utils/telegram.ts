@@ -8,7 +8,8 @@ export interface ContactFormData {
 
 export const sendTelegramMessage = async (data: ContactFormData): Promise<boolean> => {
   try {
-    const response = await fetch('http://localhost:5000/api/application', {
+    const apiUrl = import.meta.env.VITE_API_URL || 'http://localhost:5000';
+    const response = await fetch(`${apiUrl}/api/application`, {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
