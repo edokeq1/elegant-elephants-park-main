@@ -4,6 +4,7 @@
   "description": "Admin Telegram Bot Backend",
   "main": "index.js",
   "scripts": {
+    "build": "echo 'No build step'",
     "start": "node index.js"
   },
   "dependencies": {
