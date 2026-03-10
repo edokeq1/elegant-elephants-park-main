@@ -3,6 +3,7 @@ import riverColImg from './photo/2.jpg';
 import countryResImg from './photo/3.png';
 import cascadeLakesImg from './photo/4.jpg';
 import elephantParkImg from './photo/5.jpg';
+import presentationPdf from './photo/presentation.pdf';
 
 export type Language = 'en' | 'ua';
 
@@ -21,7 +22,6 @@ export const translations = {
       yield: '17.3% Annual',
       note: 'Excluding capitalization',
       term: 'partnership with investors',
-      minTermLabel: 'Open to',
       price: 'From $300,000',
       partners: 'Land assets from 1 to 100 Ha',
       cooperation: 'Discuss Cooperation'
@@ -30,9 +30,9 @@ export const translations = {
       badge: '',
       title1: 'ZEMRESURS',
       title2: '', // Removed second part as requested name is single word or handled differently
-      description: 'Компания з управління земельними активами в передмісті Києва',
+      description: 'Land asset management company in the suburbs of Kyiv',
       explore: 'Download Presentation',
-      exploreLink: '/photo/presentation.pdf',
+      exploreLink: presentationPdf,
       masterplan: 'Objects',
       est: 'EST. 2025',
       location: 'KYIV REGION',
@@ -766,7 +766,6 @@ export const translations = {
       yield: '17.3 % річних',
       note: 'Без урахування капіталізації',
       term: 'запрошуємо до партнерства з нами',
-      minTermLabel: 'Відкриті',
       price: 'Від 300 000$',
       partners: 'Земельні активи від 1 до 100 Га',
       cooperation: 'Обговорити співпрацю'
@@ -777,7 +776,7 @@ export const translations = {
       title2: '',
       description: 'Компанія з управління земельними активами в передмісті Києва',
       explore: 'Завантажити презентацію',
-      exploreLink: '/photo/presentation.pdf',
+      exploreLink: presentationPdf,
       masterplan: 'Обʼєкти',
       est: 'ЗАСН. 2025',
       location: 'КИЇВСЬКА ОБЛ.',

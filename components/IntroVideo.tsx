@@ -57,11 +57,7 @@ export const IntroVideo: React.FC<{ t: any, onNavigate: (page: any) => void }> =
                         </span>
                     </button>
 
-                    {/* Investment Term */}
                     <div className="flex flex-col gap-1 md:gap-3 glass-panel p-4 md:p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-xl shadow-black/40">
-                        <div className="text-[10px] md:text-sm font-bold uppercase tracking-[0.2em] text-brand-accent-light">
-                            {t.intro.minTermLabel}
-                        </div>
                         <div className="text-xl md:text-4xl font-light font-heading tracking-tight leading-tight">
                             {t.intro.term.replace(' - ', ' ')}
                         </div>

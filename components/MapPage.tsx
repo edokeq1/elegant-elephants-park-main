@@ -2,6 +2,7 @@ import React, { useEffect, useState, useMemo, useCallback, useRef } from 'react'
 import { ArrowLeft, MapPin, Maximize2, X, Navigation, Phone, ExternalLink } from 'lucide-react';
 import { ImageViewer } from './ImageViewer';
 import { LazyImage } from './LazyImage';
+import { Language } from '../translations';
 import { MapContainer, TileLayer, Marker, Popup, ZoomControl, useMap } from 'react-leaflet';
 import L from 'leaflet';
 import 'leaflet/dist/leaflet.css';
@@ -59,6 +60,7 @@ interface MapPageProps {
   onBack: () => void;
   onContact: () => void;
   t: Translation;
+  lang: Language;
   initialSelectedId?: string | null;
 }
 
@@ -414,7 +416,7 @@ const PropertyModal = ({
 };
 
 // Main Component
-const MapPage: React.FC<MapPageProps> = ({ onBack, onContact, t, initialSelectedId }) => {
+const MapPage: React.FC<MapPageProps> = ({ onBack, onContact, t, lang, initialSelectedId }) => {
   const [selectedProperty, setSelectedProperty] = useState<Property | null>(null);
   const [isMounted, setIsMounted] = useState(false);
   const [mapInstance, setMapInstance] = useState<L.Map | null>(null);
@@ -510,7 +512,7 @@ const MapPage: React.FC<MapPageProps> = ({ onBack, onContact, t, initialSelected
             className="w-full h-full outline-none"
           >
             <TileLayer
-              url="https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}"
+              url={`https://mt1.google.com/vt/lyrs=y&x={x}&y={y}&z={z}&hl=${lang === 'ua' ? 'uk' : 'en'}`}
               attribution='&copy; <a href="https://www.google.com/maps">Google Maps</a>'
             />
 

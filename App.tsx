@@ -172,6 +172,7 @@ function App() {
                 setSelectedObjectId(null);
               }}
               t={t}
+              lang={lang}
               onContact={() => handleNavigate('contact')}
               initialSelectedId={selectedObjectId}
             />
