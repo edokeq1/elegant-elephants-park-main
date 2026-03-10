@@ -1,5 +1,5 @@
 import React, { useEffect, useState, useRef } from 'react';
-import { ArrowRight } from 'lucide-react';
+import { ArrowRight, ArrowDown } from 'lucide-react';
 import mainVideo from '../photo/main.mp4';
 
 
@@ -76,9 +76,11 @@ export const Hero: React.FC<{ t: any; onNavigate: (page: any) => void }> = ({ t,
 
           {/* Badge */}
           <div className="opacity-0 animate-reveal-up stagger-1">
-            <span className="text-[10px] md:text-sm font-black uppercase tracking-[0.4em] text-brand-accent-light border px-4 py-2 md:px-5 md:py-2.5 border-brand-accent/30 rounded-full backdrop-blur-md bg-brand-dark/30">
-              {t.badge}
-            </span>
+            {t.badge && (
+              <span className="text-[10px] md:text-sm font-black uppercase tracking-[0.4em] text-brand-accent-light border px-4 py-2 md:px-5 md:py-2.5 border-brand-accent/30 rounded-full backdrop-blur-md bg-brand-dark/30">
+                {t.badge}
+              </span>
+            )}
           </div>
 
           {/* Title */}
@@ -98,16 +100,18 @@ export const Hero: React.FC<{ t: any; onNavigate: (page: any) => void }> = ({ t,
 
           {/* CTA Buttons */}
           <div className="mt-8 flex flex-col md:flex-row gap-4 items-center justify-center opacity-0 animate-reveal-up stagger-4 w-full max-w-sm mx-auto md:max-w-none">
-            <button
-              onClick={() => onNavigate('map')}
-              className="group relative w-full md:w-auto px-8 py-4 md:px-14 md:py-6 bg-brand-accent text-brand-dark transition-all duration-500 ease-out overflow-hidden rounded-full hover:scale-105 shadow-[0_20px_40px_rgba(0,0,0,0.4)] active:scale-95"
+            <a
+              href={t.exploreLink}
+              target="_blank"
+              rel="noopener noreferrer"
+              className="group relative w-full md:w-auto px-8 py-4 md:px-14 md:py-6 bg-brand-accent text-brand-dark transition-all duration-500 ease-out overflow-hidden rounded-full hover:scale-105 shadow-[0_20px_40px_rgba(0,0,0,0.4)] active:scale-95 text-center flex items-center justify-center whitespace-nowrap"
             >
               <div className="absolute inset-0 w-full h-full bg-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 origin-left"></div>
-              <span className="relative z-10 text-xs md:text-sm font-black uppercase tracking-[0.3em] group-hover:text-brand-dark transition-colors flex items-center justify-center gap-3 whitespace-nowrap">
+              <span className="relative z-10 text-xs md:text-sm font-black uppercase tracking-[0.3em] group-hover:text-brand-dark transition-colors flex items-center justify-center gap-3">
                 {t.explore}
                 <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
               </span>
-            </button>
+            </a>
             <button
               onClick={() => onNavigate('objects')}
               className="w-full md:w-auto px-8 py-4 md:px-14 md:py-6 border border-white/20 text-white font-black uppercase tracking-[0.3em] text-xs md:text-sm hover:bg-white/10 transition-all duration-300 backdrop-blur-sm rounded-full whitespace-nowrap"
@@ -118,15 +122,21 @@ export const Hero: React.FC<{ t: any; onNavigate: (page: any) => void }> = ({ t,
         </div>
       </div>
 
-      {/* 5. Bottom Elements (Footer in Hero) */}
-      <div className="absolute bottom-10 left-0 right-0 z-30 px-6 md:px-12 hidden md:flex justify-between items-end w-full">
-        {/* Bottom Left: Socials or Status */}
-        <div className="flex flex-col text-[10px] font-black text-brand-accent tracking-[0.3em] gap-2 opacity-80">
-          <span>{t.est}</span>
-          <span>{t.location}</span>
-        </div>
+      {/* Scroll Down Indicator */}
+      <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30 flex flex-col items-center gap-4">
+        {/* Scroll Down Button */}
+        <button
+            onClick={() => {
+              window.scrollTo({
+                  top: window.innerHeight,
+                  behavior: 'smooth'
+              })
+            }}
+            className="animate-bounce cursor-pointer p-4 hover:bg-white/5 rounded-full transition-colors flex items-center justify-center"
+        >
+            <ArrowDown className="w-8 h-8 text-white/50" />
+        </button>
       </div>
-
     </div>
   );
 };

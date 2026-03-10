@@ -1,15 +1,8 @@
 import React from 'react';
+import { ArrowRight } from 'lucide-react';
 import secondVideo from '../photo/second.mp4';
-import { ArrowDown } from 'lucide-react';
 
-export const IntroVideo: React.FC<{ t: any }> = ({ t }) => {
-    const handleScrollDown = () => {
-        window.scrollTo({
-            top: window.innerHeight,
-            behavior: 'smooth'
-        });
-    };
-
+export const IntroVideo: React.FC<{ t: any, onNavigate: (page: any) => void }> = ({ t, onNavigate }) => {
     return (
         <div className="relative w-full min-h-[100dvh] overflow-hidden bg-brand-dark text-white flex flex-col">
             {/* Background Video */}
@@ -51,6 +44,18 @@ export const IntroVideo: React.FC<{ t: any }> = ({ t }) => {
                             {t.intro.note}
                         </p>
                     </div>
+                    
+                    {/* Cooperation Button */}
+                    <button
+                        onClick={() => onNavigate('cooperation')}
+                        className="group relative px-8 py-3 md:px-14 md:py-6 bg-brand-accent text-brand-dark transition-all duration-500 ease-out overflow-hidden rounded-full hover:scale-105 shadow-[0_20px_40px_rgba(0,0,0,0.4)] active:scale-95"
+                    >
+                        <div className="absolute inset-0 w-full h-full bg-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 origin-left"></div>
+                        <span className="relative z-10 text-xs md:text-sm font-black uppercase tracking-[0.3em] group-hover:text-brand-dark transition-colors flex items-center justify-center gap-3">
+                            {t.intro.cooperation}
+                            <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1 hidden" />
+                        </span>
+                    </button>
 
                     {/* Investment Term */}
                     <div className="flex flex-col gap-1 md:gap-3 glass-panel p-4 md:p-6 rounded-2xl border border-white/10 bg-white/5 backdrop-blur-sm shadow-xl shadow-black/40">
@@ -83,16 +88,6 @@ export const IntroVideo: React.FC<{ t: any }> = ({ t }) => {
                         })()}
                     </div>
                 </div>
-            </div>
-
-            {/* Scroll Down Indicator */}
-            <div className="absolute bottom-10 left-1/2 -translate-x-1/2 z-30">
-                <button
-                    onClick={handleScrollDown}
-                    className="animate-bounce cursor-pointer p-4 hover:bg-white/5 rounded-full transition-colors flex items-center justify-center"
-                >
-                    <ArrowDown className="w-8 h-8 text-white/50" />
-                </button>
             </div>
         </div>
     );

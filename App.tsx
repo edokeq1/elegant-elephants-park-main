@@ -3,11 +3,11 @@ import { Navbar } from './components/Navbar';
 import { Hero } from './components/Hero';
 import { ContactWidget } from './components/ContactWidget';
 import { ContactPage } from './components/ContactPage';
-import { AboutPage } from './components/AboutPage';
 import { ObjectsPage } from './components/ObjectsPage';
 import { PrivacyPage } from './components/PrivacyPage';
 import { TermsPage } from './components/TermsPage';
 import { CookiePage } from './components/CookiePage';
+import { CooperationPage } from './components/CooperationPage';
 import { Footer } from './components/Footer';
 import MapPage from './components/MapPage';
 import { MasterplanPage } from './components/MasterplanPage';
@@ -23,7 +23,7 @@ import { FAQSection } from './components/FAQSection';
 import { NoiseOverlay } from './components/NoiseOverlay';
 
 
-type AppPage = 'home' | 'contact' | 'privacy' | 'terms' | 'cookie' | 'about' | 'objects' | 'map' | 'masterplan' | 'investment';
+type AppPage = 'home' | 'contact' | 'privacy' | 'terms' | 'cookie' | 'objects' | 'map' | 'masterplan' | 'investment' | 'cooperation';
 
 function App() {
   const [currentPage, setCurrentPage] = useState<AppPage>(() => {
@@ -130,8 +130,8 @@ function App() {
         <div key={currentPage} className="flex-grow flex flex-col">
           {currentPage === 'home' && (
             <>
-              <IntroVideo t={t} />
               <Hero t={t.hero} onNavigate={handleNavigate} />
+              <IntroVideo t={t} onNavigate={handleNavigate} />
               <ColTownSection t={t.colTown} />
               <RiverColSection t={t.riverCol} />
               <CountryResidenceSection t={t.countryResidence} />
@@ -142,7 +142,6 @@ function App() {
               {/* Map Widget - Updated to use dark theme if needed, or keep as is */}
             </>
           )}
-          {currentPage === 'about' && <AboutPage onBack={handleBack} t={t.about} />}
           {currentPage === 'objects' && (
             <ObjectsPage
               onBack={handleBack}
@@ -178,6 +177,7 @@ function App() {
             />
           )}
           {currentPage === 'contact' && <ContactPage onBack={handleBack} t={t.contact} />}
+          {currentPage === 'cooperation' && <CooperationPage onBack={handleBack} t={t.cooperation} />}
           {currentPage === 'privacy' && <PrivacyPage onBack={handleBack} t={t.legal} />}
           {currentPage === 'terms' && <TermsPage onBack={handleBack} t={t.legal} />}
           {currentPage === 'cookie' && <CookiePage onBack={handleBack} t={t.legal} />}

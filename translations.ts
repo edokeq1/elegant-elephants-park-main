@@ -20,17 +20,19 @@ export const translations = {
     intro: {
       yield: '17.3% Annual',
       note: 'Excluding capitalization',
-      term: 'Minimum investment term - 3 years',
-      minTermLabel: 'Minimum Term',
+      term: 'partnership with investors',
+      minTermLabel: 'Open to',
       price: 'From $300,000',
-      partners: 'Land assets from 1 to 100 Ha'
+      partners: 'Land assets from 1 to 100 Ha',
+      cooperation: 'Discuss Cooperation'
     },
     hero: {
-      badge: 'The Gates of Kyiv',
+      badge: '',
       title1: 'ZEMRESURS',
       title2: '', // Removed second part as requested name is single word or handled differently
-      description: 'Land asset sales company in the suburbs of Kyiv',
-      explore: 'View Map',
+      description: 'Компания з управління земельними активами в передмісті Києва',
+      explore: 'Download Presentation',
+      exploreLink: '/photo/presentation.pdf',
       masterplan: 'Objects',
       est: 'EST. 2025',
       location: 'KYIV REGION',
@@ -88,10 +90,67 @@ export const translations = {
       errorBoth: 'Please check both your email and phone number format.',
       errorEmail: 'Invalid email address. Please use name@example.com',
       errorPhone: 'Invalid phone number. Min 10 digits required.',
-      successInquiry: 'Your inquiry has been sent successfully!'
+      successInquiry: 'Your inquiry has been sent successfully!',
+      privacyConsent: 'You confirm that you have read, accepted and agreed to the Privacy Policy.'
+    },
+    cooperation: {
+      back: 'Return to Portal',
+      badge: 'Strategic Partnership',
+      title1: 'Discuss',
+      title2: 'Cooperation.',
+      description: 'ZEMRESURS is open to B2B collaborations, co-investment options, and strategic alliances.',
+      whyUs: [
+        {
+          title: "B2B Opportunities",
+          description: "Exclusive conditions for corporate partners and institutional investors."
+        },
+        {
+          title: "Co-Investment",
+          description: "Participate in early-stage development of high-yield residential zones."
+        },
+        {
+          title: "Transparency",
+          description: "Full access to financial models, legal documentation, and construction progress."
+        },
+        {
+          title: "Tailored Approach",
+          description: "We design partnership structures that fit your specific investment goals."
+        },
+        {
+          title: "Joint Ventures",
+          description: "Opportunities to develop specific zones or infrastructure objects together."
+        },
+        {
+          title: "Priority Access",
+          description: "Partners receive first look at our newest land acquisitions before the public."
+        }
+      ],
+      formTitle: 'Propose Cooperation',
+      formSubtitle: 'Direct line to our investment committee',
+      nameLabel: 'Company Name / Representative',
+      emailLabel: 'Corporate Email',
+      phoneLabel: 'Direct Phone Line',
+      messageLabel: 'Partnership Intent',
+      placeholderName: 'e.g. Investment Group LLC',
+      placeholderEmail: 'partners@company.com',
+      placeholderPhone: '+380 000 00 00',
+      placeholderMessage: 'Outline your proposal or interest...',
+      submit: 'Send Proposal',
+      processing: 'Processing...',
+      successTitle: 'Proposal Received',
+      successText: 'Our investment committee will review your proposal and contact you shortly.',
+      successAction: 'Send another proposal',
+      formatValid: 'Format Valid',
+      formatInvalid: 'Invalid Format',
+      errorName: 'Please enter a valid company or representative name.',
+      errorBoth: 'Please check both your email and phone number format.',
+      errorEmail: 'Invalid corporate email address.',
+      errorPhone: 'Invalid phone number. Min 10 digits required.',
+      successInquiry: 'Your proposal has been successfully transmitted!',
+      privacyConsent: 'You confirm that you have read, accepted and agreed to the Privacy Policy.'
     },
     footer: {
-      description: 'A masterpiece of nature and modern architecture. Exclusive residential zones at the gates of Kyiv.',
+      description: 'A masterpiece of nature and modern architecture. Exclusive residential zones at the gates of Kyiv. A unique ecosystem for life and investment, combining premium service, innovative technologies, and pristine natural landscapes.',
       nav: 'Navigation',
       legal: 'Legal',
       assistance: 'Assistance',
@@ -318,6 +377,14 @@ export const translations = {
           {
             title: '3. Rights of Access',
             content: 'As a valued interest holder, you have the right to request access, correction, or deletion of your personal data from our records. For high-profile identities requiring specialized handling protocols, please contact our Data Privacy Officer at PARTNERS@ZEMRESURS.COM.'
+          },
+          {
+            title: '4. Data Retention',
+            content: 'We retain your personal information only for as long as necessary to fulfill the purposes for which it was collected, including for the purposes of satisfying any legal, accounting, or reporting requirements. Upon expiration of this period, your data will be securely deleted.'
+          },
+          {
+            title: '5. Data Transfers',
+            content: 'Your information, including Personal Data, may be transferred to and maintained on computers located outside of your state, province, country or other governmental jurisdiction where the data protection laws may differ from those from your jurisdiction.'
           }
         ]
       },
@@ -336,6 +403,14 @@ export const translations = {
           {
             title: '3. Proprietary Design',
             content: 'All architectural concepts, zone philosophies, and technical specifications disclosed herein are proprietary. Unauthorized reproduction or use of these concepts without a bilateral agreement is strictly prohibited and protected under international property law.'
+          },
+          {
+            title: '4. User Obligations',
+            content: 'You agree to use our portal only for lawful purposes and in a way that does not infringe the rights of, restrict or inhibit anyone else\'s use and enjoyment of the portal. Prohibited behavior includes harassing or causing distress or inconvenience to any other user, transmitting obscene or offensive content or disrupting the normal flow of dialogue within our portal.'
+          },
+          {
+            title: '5. Limitation of Liability',
+            content: 'ZEMRESURS shall not be liable for any indirect, incidental, special, consequential or punitive damages, or any loss of profits or revenues, whether incurred directly or indirectly, or any loss of data, use, goodwill, or other intangible losses, resulting from your access to or use of or inability to access or use the portal.'
           }
         ]
       },
@@ -354,6 +429,14 @@ export const translations = {
           {
             title: '3. Preference Control',
             content: 'You may adjust your browser settings to refuse or alert you about cookies. Please note that disabling essential cookies may impact the parallax effects and real-time validation features of our concierge portal.'
+          },
+          {
+            title: '4. Types of Cookies Used',
+            content: 'We use both session and persistent cookies on the portal and we use different types of cookies to run the portal: Essential cookies, Preference cookies, Analytics cookies, and Advertising cookies.'
+          },
+          {
+            title: '5. Third-Party Cookies',
+            content: 'In addition to our own cookies, we may also use various third-parties cookies to report usage statistics of the portal, deliver advertisements on and through the portal, and so on.'
           }
         ]
       }
@@ -682,17 +765,19 @@ export const translations = {
     intro: {
       yield: '17.3 % річних',
       note: 'Без урахування капіталізації',
-      term: 'Мінімальний термін інвестиційної угоди - 3 роки',
-      minTermLabel: 'Мінімальний термін',
+      term: 'запрошуємо до партнерства з нами',
+      minTermLabel: 'Відкриті',
       price: 'Від 300 000$',
-      partners: 'Земельні активи від 1 до 100 Га'
+      partners: 'Земельні активи від 1 до 100 Га',
+      cooperation: 'Обговорити співпрацю'
     },
     hero: {
-      badge: 'Брама Києва',
+      badge: '',
       title1: 'ZEMRESURS',
       title2: '',
-      description: 'Компанія з продажу земельних активів в передмісті Києва',
-      explore: 'Дивитися карту',
+      description: 'Компанія з управління земельними активами в передмісті Києва',
+      explore: 'Завантажити презентацію',
+      exploreLink: '/photo/presentation.pdf',
       masterplan: 'Обʼєкти',
       est: 'ЗАСН. 2025',
       location: 'КИЇВСЬКА ОБЛ.',
@@ -750,10 +835,67 @@ export const translations = {
       errorBoth: 'Будь ласка, перевірте формат email та номеру телефону.',
       errorEmail: 'Невірна email адреса. Використовуйте name@example.com',
       errorPhone: 'Невірний номер телефону. Мін. 10 цифр.',
-      successInquiry: 'Ваш запит успішно надіслано!'
+      successInquiry: 'Ваш запит успішно надіслано!',
+      privacyConsent: 'Ви підтверджуєте, що ознайомилися, прийняли та погодилися з Політикою конфіденційності.'
+    },
+    cooperation: {
+      back: 'Повернутися',
+      badge: 'Стратегічне Партнерство',
+      title1: 'Обговорити',
+      title2: 'Співпрацю.',
+      description: 'ZEMRESURS відкритий до B2B-співпраці, спільних інвестицій та стратегічних альянсів.',
+      whyUs: [
+        {
+          title: "B2B Можливості",
+          description: "Ексклюзивні умови для корпоративних партнерів та інституційних інвесторів."
+        },
+        {
+          title: "Спільне Інвестування",
+          description: "Участь на ранніх етапах забудови високомобільних житлових зон."
+        },
+        {
+          title: "Прозорість",
+          description: "Повний доступ до фінансових моделей, юридичної документації та ходу будівництва."
+        },
+        {
+          title: "Індивідуальний Підхід",
+          description: "Ми розробляємо структури партнерства, які відповідають вашим інвестиційним цілям."
+        },
+        {
+          title: "Спільні Підприємства",
+          description: "Можливість спільно розвивати конкретні зони чи інфраструктурні об'єкти."
+        },
+        {
+          title: "Пріоритетний Доступ",
+          description: "Партнери першими отримують пропозиції щодо наших нових земельних активів."
+        }
+      ],
+      formTitle: 'Запропонувати Співпрацю',
+      formSubtitle: 'Прямий зв\'язок з нашим інвестиційним комітетом',
+      nameLabel: 'Назва Компанії / Представник',
+      emailLabel: 'Корпоративний Email',
+      phoneLabel: 'Прямий Номер Телефону',
+      messageLabel: 'Суть Пропозиції',
+      placeholderName: 'напр. Інвест Груп ТОВ',
+      placeholderEmail: 'partners@company.com',
+      placeholderPhone: '+380 000 00 00',
+      placeholderMessage: 'Опишіть вашу пропозицію...',
+      submit: 'Надіслати Пропозицію',
+      processing: 'Обробка...',
+      successTitle: 'Пропозицію Отримано',
+      successText: 'Наш інвестиційний комітет розгляне вашу пропозицію та зв\'яжеться з вами найближчим часом.',
+      successAction: 'Надіслати ще одну пропозицію',
+      formatValid: 'Вірний Формат',
+      formatInvalid: 'Невірний Формат',
+      errorName: 'Будь ласка, введіть коректну назву компанії або представника.',
+      errorBoth: 'Будь ласка, перевірте формат email та номеру телефону.',
+      errorEmail: 'Невірна адреса електронної пошти.',
+      errorPhone: 'Невірний номер телефону. Мін. 10 цифр.',
+      successInquiry: 'Вашу пропозицію успішно надіслано!',
+      privacyConsent: 'Ви підтверджуєте, що ознайомилися, прийняли та погодилися з Політикою конфіденційності.'
     },
     footer: {
-      description: 'Шедевр природи та сучасної архітектури. Ексклюзивні житлові зони біля воріт Києва.',
+      description: 'Шедевр природи та сучасної архітектури. Ексклюзивні житлові зони біля воріт Києва. Унікальна екосистема для життя та інвестицій, що поєднує преміальний сервіс, інноваційні технології та первозданні природні ландшафти.',
       nav: 'Навігація',
       legal: 'Юридична інформація',
       assistance: 'Допомога',
@@ -981,6 +1123,14 @@ export const translations = {
           {
             title: '3. Права Доступу',
             content: 'Ви маєте право запитувати доступ, виправлення або видалення ваших персональних даних з нашої бази. Для особливих випадків, що потребують спеціалізованих протоколів обробки, звертайтеся до нашого офіцера з питань конфіденційності: PARTNERS@ZEMRESURS.COM.'
+          },
+          {
+            title: '4. Зберігання Даних',
+            content: 'Ми зберігаємо вашу особисту інформацію лише стільки, скільки необхідно для досягнення цілей, для яких вона була зібрана, включаючи виконання будь-яких юридичних, бухгалтерських або звітних вимог. Після закінчення цього періоду ваші дані будуть надійно видалені.'
+          },
+          {
+            title: '5. Передача Даних',
+            content: 'Ваша інформація, включаючи Персональні Дані, може бути передана і зберігатися на комп\'ютерах, розташованих за межами вашої області, провінції, країни або іншої юрисдикції, де закони про захист даних можуть відрізнятися від законів вашої юрисдикції.'
           }
         ]
       },
@@ -999,6 +1149,14 @@ export const translations = {
           {
             title: '3. Власна Концепція',
             content: 'Усі архітектурні концепції, філософії зон та технічні характеристики, розкриті тут, є власністю компанії. Несанкціоноване відтворення або використання цих концепцій без двосторонньої угоди суворо заборонено та охороняється міжнародним правом.'
+          },
+          {
+            title: '4. Зобов\'язання Користувача',
+            content: 'Ви погоджуєтесь використовувати наш портал лише в законних цілях і таким чином, щоб не порушувати права, не обмежувати та не перешкоджати використанню порталу будь-ким іншим. Заборонена поведінка включає переслідування або заподіяння незручностей іншому користувачеві, передачу непристойного або образливого контенту.'
+          },
+          {
+            title: '5. Обмеження Відповідальності',
+            content: 'ZEMRESURS не несе відповідальності за будь-які непрямі, випадкові, спеціальні або побічні збитки, або будь-яку втрату прибутку чи доходу, незалежно від того, чи були вони понесені прямо чи опосередковано, або будь-яку втрату даних, використання, гудвілу чи інших нематеріальних втрат.'
           }
         ]
       },
@@ -1017,6 +1175,14 @@ export const translations = {
           {
             title: '3. Контроль Переваг',
             content: 'Ви можете змінити налаштування браузера, щоб відмовитися від файлів cookie. Зверніть увагу, що вимкнення основних файлів cookie може вплинути на ефект паралакса та функції онлайн-валідації нашого порталу.'
+          },
+          {
+            title: '4. Типи Файлів Cookie',
+            content: 'Ми використовуємо як сесійні, так і постійні файли cookie на порталі: необхідні файли cookie, файли cookie уподобань, аналітичні файли cookie та рекламні файли cookie.'
+          },
+          {
+            title: '5. Cookie Сторонніх Сервісів',
+            content: 'Крім наших власних файлів cookie, ми також можемо використовувати різні файли cookie третіх сторін для звітування статистики використання порталу, показу реклами на порталі та через нього тощо.'
           }
         ]
       }

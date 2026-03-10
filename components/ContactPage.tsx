@@ -1,6 +1,7 @@
 import React, { useState, useMemo, useCallback } from 'react';
 import { Send, Phone, Mail, MapPin, CheckCircle2, ArrowLeft, Loader2, AlertCircle, Sparkles, Clock, Target, ShieldCheck, MessageSquare, Instagram, Linkedin, Twitter } from 'lucide-react';
 import { Notification } from './Notification';
+import { sendTelegramMessage } from '../utils/telegram';
 
 interface ContactPageProps {
   onBack: () => void;
@@ -127,14 +128,35 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onBack, t }) => {
     }
 
     setIsSubmitting(true);
-    await new Promise(resolve => setTimeout(resolve, 2000));
+    
+    // Add artificial delay for UX and send the message
+    const [, success] = await Promise.all([
+      new Promise(resolve => setTimeout(resolve, 1000)),
+      sendTelegramMessage({
+        name: formState.name,
+        email: formState.email,
+        phone: formState.phone,
+        message: formState.message,
+        source: 'Contact'
+      })
+    ]);
+
     setIsSubmitting(false);
-    setIsSubmitted(true);
-    setNotification({
-      isVisible: true,
-      message: t.successInquiry,
-      type: 'success'
-    });
+
+    if (success) {
+      setIsSubmitted(true);
+      setNotification({
+        isVisible: true,
+        message: t.successInquiry,
+        type: 'success'
+      });
+    } else {
+      setNotification({
+        isVisible: true,
+        message: 'Сталася помилка при відправці. Спробуйте пізніше або зв\'яжіться з нами напряму.',
+        type: 'error'
+      });
+    }
   };
 
   const whyUsWithIcons = useMemo(() => [
@@ -285,15 +307,20 @@ export const ContactPage: React.FC<ContactPageProps> = ({ onBack, t }) => {
                       />
                     </div>
 
-                    <InputField 
-                      label={t.messageLabel}
-                      id="message"
-                      isTextArea
-                      placeholder={t.placeholderMessage}
-                      value={formState.message}
-                      onChange={(val: string) => handleInputChange('message', val)}
-                      t={t}
-                    />
+                    <div className="space-y-1">
+                      <InputField 
+                        label={t.messageLabel}
+                        id="message"
+                        isTextArea
+                        placeholder={t.placeholderMessage}
+                        value={formState.message}
+                        onChange={(val: string) => handleInputChange('message', val)}
+                        t={t}
+                      />
+                      <p className="text-[10px] text-gray-500 font-light px-1">
+                        {t.privacyConsent}
+                      </p>
+                    </div>
                   </div>
 
                   <button 

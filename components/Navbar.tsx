@@ -37,12 +37,12 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, t, currentLang, onLa
         <div className="flex flex-1 items-center min-w-[50px]">
           <button
             onClick={() => setIsMenuOpen(!isMenuOpen)}
-            className="xl:hidden p-2 -ml-2 text-brand-accent hover:text-white transition-colors pointer-events-auto"
+            className="2xl:hidden p-2 -ml-2 text-brand-accent hover:text-white transition-colors pointer-events-auto"
           >
             {isMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
           </button>
 
-          <div className="hidden lg:flex flex-col items-start pointer-events-auto">
+          <div className="hidden 2xl:flex flex-col items-start pointer-events-auto">
             <button
               onClick={() => handleNavigate('contact')}
               className="text-[10px] 2xl:text-[12px] font-black tracking-[0.1em] 2xl:tracking-[0.3em] text-brand-accent hover:text-white transition-all uppercase border-b border-brand-accent/0 hover:border-white pb-1 whitespace-nowrap"
@@ -63,13 +63,9 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, t, currentLang, onLa
         {/* Right: Actions */}
         <div className="flex items-center gap-4 lg:gap-6 pointer-events-auto flex-1 justify-end min-w-[50px] relative z-20">
           {/* Desktop Nav */}
-          <div className="hidden lg:flex items-center gap-4 xl:gap-6 text-xs xl:text-sm font-black tracking-widest uppercase">
+          <div className="hidden 2xl:flex items-center gap-4 xl:gap-6 text-xs xl:text-sm font-black tracking-widest uppercase">
             <button onClick={() => handleNavigate('objects')} className="relative group hover:text-brand-accent transition-colors duration-300 whitespace-nowrap">
               {t.objects}
-              <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
-            </button>
-            <button onClick={() => handleNavigate('about')} className="relative group hover:text-brand-accent transition-colors duration-300 whitespace-nowrap">
-              {t.about}
               <span className="absolute -bottom-1 left-0 w-0 h-[1px] bg-brand-accent transition-all duration-300 group-hover:w-full"></span>
             </button>
             <button onClick={() => handleNavigate('masterplan')} className="relative group hover:text-brand-accent transition-colors duration-300 whitespace-nowrap">
@@ -86,7 +82,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, t, currentLang, onLa
             </button>
           </div>
 
-          <div className="h-4 w-[1px] bg-white/20 hidden lg:block"></div>
+          <div className="h-4 w-[1px] bg-white/20 hidden 2xl:block"></div>
 
           {/* Language Switcher */}
           <div className="flex items-center space-x-2 md:space-x-3 text-xs xl:text-sm font-black tracking-widest shrink-0">
@@ -108,7 +104,7 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, t, currentLang, onLa
       </div>
 
       {/* Mobile Menu Overlay */}
-      <div className={`fixed inset-0 bg-brand-dark/98 backdrop-blur-2xl z-[200] transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] lg:hidden overflow-y-auto ${isMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-full pointer-events-none'
+      <div className={`fixed inset-0 bg-brand-dark/98 backdrop-blur-2xl z-[200] transition-all duration-700 ease-[cubic-bezier(0.19,1,0.22,1)] 2xl:hidden overflow-y-auto ${isMenuOpen ? 'opacity-100 translate-y-0 pointer-events-auto' : 'opacity-0 -translate-y-full pointer-events-none'
         }`}>
         <div className="flex flex-col items-center min-h-[100dvh] pt-32 pb-10 gap-8 px-8 relative">
           <button
@@ -132,14 +128,6 @@ export const Navbar: React.FC<NavbarProps> = ({ onNavigate, t, currentLang, onLa
               style={{ transitionDelay: '100ms' }}
             >
               {t.map}
-            </button>
-            <button
-              onClick={() => handleNavigate('about')}
-              className={`text-2xl md:text-3xl font-light uppercase tracking-[0.2em] hover:text-brand-accent transition-all duration-500 transform ${isMenuOpen ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'
-                }`}
-              style={{ transitionDelay: '150ms' }}
-            >
-              {t.about}
             </button>
             <button
               onClick={() => handleNavigate('masterplan')}

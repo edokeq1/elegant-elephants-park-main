@@ -510,8 +510,8 @@ const MapPage: React.FC<MapPageProps> = ({ onBack, onContact, t, initialSelected
             className="w-full h-full outline-none"
           >
             <TileLayer
-              url="https://{s}.basemaps.cartocdn.com/dark_all/{z}/{x}/{y}{r}.png"
-              attribution='&copy; <a href="https://www.openstreetmap.org/copyright">OpenStreetMap</a> contributors &copy; <a href="https://carto.com/attributions">CARTO</a>'
+              url="https://mt1.google.com/vt/lyrs=s&x={x}&y={y}&z={z}"
+              attribution='&copy; <a href="https://www.google.com/maps">Google Maps</a>'
             />
 
             <MapEffects onMapReady={setMapInstance} />
@@ -600,9 +600,9 @@ const MapPage: React.FC<MapPageProps> = ({ onBack, onContact, t, initialSelected
         .leaflet-container {
           background: #16202A !important;
         }
-        .premium-map-theme .leaflet-tile {
+        /* .premium-map-theme .leaflet-tile {
           filter: grayscale(1) invert(0.9) brightness(0.8) contrast(1.2) !important;
-        }
+        } */
         .leaflet-popup-content-wrapper {
           background: transparent !important;
           box-shadow: none !important;

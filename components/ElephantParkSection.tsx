@@ -58,7 +58,7 @@ export const ElephantParkSection: React.FC<ElephantParkSectionProps> = ({ t }) =
                         {/* Cadastral Link */}
                         <div className={`flex flex-col sm:flex-row gap-4 transition-all duration-1000 delay-[600ms] transform ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
                             <a
-                                href="https://kadastrova-karta.com/dilyanka/3222782600:06:005:0190"
+                                href="https://opendatabot.ua/l/3222782600:06:005:0190?from=search"
                                 target="_blank"
                                 rel="noopener noreferrer"
                                 className="flex items-center justify-center gap-3 px-8 py-5 border border-brand-accent text-brand-accent rounded-full hover:bg-brand-accent hover:text-brand-dark transition-all uppercase text-xs font-black tracking-[0.2em] group"

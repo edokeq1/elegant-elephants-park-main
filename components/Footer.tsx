@@ -37,7 +37,6 @@ export const Footer: React.FC<FooterProps> = ({ onNavigate, t }) => {
                 {t.map && <li><button onClick={() => onNavigate('map')} className="text-[10px] uppercase tracking-widest text-gray-400 hover:text-white transition-colors">{t.map}</button></li>}
                 {t.masterplan && <li><button onClick={() => onNavigate('masterplan')} className="text-[10px] uppercase tracking-widest text-gray-400 hover:text-white transition-colors">{t.masterplan}</button></li>}
                 {t.investment && <li><button onClick={() => onNavigate('investment')} className="text-[10px] uppercase tracking-widest text-gray-400 hover:text-white transition-colors">{t.investment}</button></li>}
-                {t.about && <li><button onClick={() => onNavigate('about')} className="text-[10px] uppercase tracking-widest text-gray-400 hover:text-white transition-colors">{t.about}</button></li>}
                 {t.contact && <li><button onClick={() => onNavigate('contact')} className="text-[10px] uppercase tracking-widest text-gray-400 hover:text-white transition-colors">{t.contact}</button></li>}
               </ul>
             </div>
