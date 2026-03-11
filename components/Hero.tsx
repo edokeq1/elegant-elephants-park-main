@@ -93,28 +93,28 @@ export const Hero: React.FC<{ t: any; onNavigate: (page: any) => void }> = ({ t,
 
           {/* description */}
           <div className="opacity-0 animate-reveal-up stagger-3">
-            <p className="text-gray-300 text-sm md:text-xl max-w-2xl mx-auto leading-relaxed font-light uppercase tracking-widest">
+            <p className="text-gray-300 text-sm md:text-xl max-w-2xl mx-auto leading-relaxed font-light uppercase tracking-wider md:tracking-widest px-4">
               {t.description}
             </p>
           </div>
 
           {/* CTA Buttons */}
-          <div className="mt-8 flex flex-col md:flex-row gap-4 items-center justify-center opacity-0 animate-reveal-up stagger-4 w-full max-w-sm mx-auto md:max-w-none">
+          <div className="mt-8 flex flex-col md:flex-row gap-4 items-center justify-center opacity-0 animate-reveal-up stagger-4 w-full max-w-[280px] sm:max-w-sm mx-auto md:max-w-none">
             <a
               href={t.exploreLink}
               target="_blank"
               rel="noopener noreferrer"
-              className="group relative w-full md:w-auto px-8 py-4 md:px-14 md:py-6 bg-brand-accent text-brand-dark transition-all duration-500 ease-out overflow-hidden rounded-full hover:scale-105 shadow-[0_20px_40px_rgba(0,0,0,0.4)] active:scale-95 text-center flex items-center justify-center whitespace-nowrap"
+              className="group relative w-full md:w-auto px-4 sm:px-8 py-4 md:px-14 md:py-6 bg-brand-accent text-brand-dark transition-all duration-500 ease-out overflow-hidden rounded-full hover:scale-105 shadow-[0_20px_40px_rgba(0,0,0,0.4)] active:scale-95 text-center flex items-center justify-center whitespace-nowrap"
             >
               <div className="absolute inset-0 w-full h-full bg-white transform -translate-x-full group-hover:translate-x-0 transition-transform duration-500 origin-left"></div>
-              <span className="relative z-10 text-xs md:text-sm font-black uppercase tracking-[0.3em] group-hover:text-brand-dark transition-colors flex items-center justify-center gap-3">
+              <span className="relative z-10 text-[10px] sm:text-xs md:text-sm font-black uppercase tracking-widest md:tracking-[0.3em] group-hover:text-brand-dark transition-colors flex items-center justify-center gap-2 md:gap-3">
                 {t.explore}
-                <ArrowRight className="w-5 h-5 transition-transform group-hover:translate-x-1" />
+                <ArrowRight className="w-4 h-4 md:w-5 md:h-5 transition-transform group-hover:translate-x-1 shrink-0" />
               </span>
             </a>
             <button
               onClick={() => onNavigate('objects')}
-              className="w-full md:w-auto px-8 py-4 md:px-14 md:py-6 border border-white/20 text-white font-black uppercase tracking-[0.3em] text-xs md:text-sm hover:bg-white/10 transition-all duration-300 backdrop-blur-sm rounded-full whitespace-nowrap"
+              className="w-full md:w-auto px-4 sm:px-8 py-4 md:px-14 md:py-6 border border-white/20 text-white font-black uppercase tracking-widest md:tracking-[0.3em] text-[10px] sm:text-xs md:text-sm hover:bg-white/10 transition-all duration-300 backdrop-blur-sm rounded-full whitespace-nowrap"
             >
               {t.masterplan}
             </button>
