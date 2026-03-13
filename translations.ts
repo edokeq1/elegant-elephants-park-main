@@ -10,7 +10,6 @@ export type Language = 'en' | 'ua';
 export const translations = {
   en: {
     nav: {
-      home: 'Home',
       objects: 'Objects',
       map: 'Map of Objects',
       about: 'About',
@@ -19,15 +18,23 @@ export const translations = {
       contact: 'Contact',
     },
     intro: {
-      yield: '17.3% Annual',
-      note: 'Excluding capitalization',
+      yield: 'Guaranteed price growth 50%',
+      note: 'Minimum investment period 3 years',
       term: 'partnership with investors',
       price: 'From $300,000',
-      partners: 'Land assets from 1 to 100 Ha',
       cooperation: 'Discuss Cooperation'
+    },
+    infoblock: {
+      title: 'Objects Air Survey',
+      route: 'Get Route',
+      youtube: 'YouTube Channel',
+      telegram: 'Telegram Channel',
+      info: 'Explore our latest developments in Kolonshchyna via satellite maps and air surveys.',
+      location: 'Kolonshchyna Village'
     },
     hero: {
       badge: '',
+      partners: 'Land assets from 1 to 100 Ha',
       title1: 'ZEMRESURS',
       title2: '', // Removed second part as requested name is single word or handled differently
       description: 'Land asset management company in the suburbs of Kyiv',
@@ -177,7 +184,7 @@ export const translations = {
       infrastructure: 'Connection of the array to general power grids – 3 months. Laying of the access road with hard surface – two weeks under climatic conditions.',
       priceTitle: 'Cost of Land Array',
       priceSubtitle: 'On the day of signing the investment agreement',
-      priceValue: '$ 350/are, or $ 481 000.00',
+      priceValue: '$ 550/are, or $ 490 000.00',
       capitalizationTitle: 'Total Project Capitalization',
       capitalizationValue: '$ 14.415 mln',
       constructionTitle: 'Construction Part',
@@ -662,7 +669,7 @@ export const translations = {
           location: 'Bucha district, Makariv community, Kolonshchyna village council',
           description: 'A unique investment opportunity combining three land plots (3.63 Ha, 1.9 Ha, 1.90 Ha) with a total area of 7.43 Ha. The landscape features a perfect balance: 3.63 Ha of dense forest and 3.8 Ha of scenic relief terrain (Hill). The project includes a comprehensive infrastructure package: a bath complex with an outdoor pool (0.55 Ha), sports and children\'s playgrounds (0.75 Ha), a kindergarten, and a commercial block (shop, cafe, pharmacy). The residential zone comprises 37 modular rental houses and 37 terrace-type houses of new architecture. Detailed amenities include a hangar for sports gear and backup generation facilities. Total project capitalization potential is estimated at $14.415 million.',
           area: '7.43 Ha',
-          price: '$481,000',
+          price: '$490,000',
           minLot: '7.43 Ha',
           image: colTownImg,
           coordinates: [50.471194, 29.92975],
@@ -686,7 +693,7 @@ export const translations = {
           location: 'Bucha district, Makariv community, Kolonshchyna village council',
           description: 'Southernmost part of the complex. Club format: 22 elite households with private access to the channel. Land plot 13.73 Ha with restored natural reservoir. Each investor gets 35 sotkas of land, a house, and a private part of the lake. Ideal place for a country residence with an exotic garden. Capitalization $14.4M.',
           area: '13.73 Ha',
-          price: '$481,000',
+          price: '$490,000',
           minLot: '13.73 Ha',
           image: countryResImg,
           coordinates: [50.468446, 29.933377],
@@ -754,7 +761,6 @@ export const translations = {
   },
   ua: {
     nav: {
-      home: 'Головна',
       objects: 'Об\'єкти',
       map: 'Карта об\'єктів',
       about: 'Про Нас',
@@ -763,15 +769,23 @@ export const translations = {
       investment: 'Інвестиції'
     },
     intro: {
-      yield: '17.3 % річних',
-      note: 'Без урахування капіталізації',
+      yield: 'Гарантовано зростання ціни 50%',
+      note: 'Мінімальний термін інвестування 3 роки',
       term: 'запрошуємо до партнерства з нами',
       price: 'Від 300 000$',
-      partners: 'Земельні активи від 1 до 100 Га',
       cooperation: 'Обговорити співпрацю'
+    },
+    infoblock: {
+      title: 'Аерозйомка об\'єктів',
+      route: 'Прокласти маршрут',
+      youtube: 'YouTube канал',
+      telegram: 'Telegram канал',
+      info: 'Дослідіть наші останні розробки в Колонщині за допомогою супутникових карт та аерозйомки.',
+      location: 'село Колонщина'
     },
     hero: {
       badge: '',
+      partners: 'Земельні активи від 1 до 100 Га',
       title1: 'ZEMRESURS',
       title2: '',
       description: 'Компанія з управління земельними активами в передмісті Києва',
@@ -921,7 +935,7 @@ export const translations = {
       infrastructure: 'Під\'єднання масиву до загальних енергомереж – 3 місяці. Прокладка під\'їздної дороги з твердим покриттям – два тижні за кліматичними умовами.',
       priceTitle: 'Вартість Земельного Масиву',
       priceSubtitle: 'На день підписання інвестиційної угоди',
-      priceValue: '$ 350/сотка, або $ 481 000.00',
+      priceValue: '$ 550/сотка, або $ 490 000.00',
       capitalizationTitle: 'Загальна Капіталізація Проекту',
       capitalizationValue: '$ 14.415 млн',
       constructionTitle: 'Будівельна Частина',
@@ -1407,7 +1421,7 @@ export const translations = {
           location: 'Бучанський район, Макарівська громада, Колонщинська сільська рада',
           description: 'Унікальна інвестиційна можливість, що об\'єднує три земельні ділянки (3,63 Га, 1,9 Га та 1,90 Га) загальною площею 7,43 Га. Ландшафт вражає балансом: 3,63 Га густого лісу та 3,8 Га рельєфної місцевості (Пагорб). До складу комплексу входить масштабна інфраструктура: банний комплекс із зовнішнім басейном (0,55 Га), спортивні та дитячі майданчики (0,75 Га), дитячий садок та комерційний блок (магазин, кав\'ярня, аптека). Житлова зона включає 37 модульних будинків для оренди та 37 будинків терасного типу новітньої архітектури. Передбачено ангар для спецтехніки та резервну генерацію. Потенціальна капіталізація проекту: $14,415 млн.',
           area: '7.43 Га',
-          price: '$481 000',
+          price: '$490 000',
           minLot: '7.43 Га',
           image: colTownImg,
           coordinates: [50.471194, 29.92975],
@@ -1431,7 +1445,7 @@ export const translations = {
           location: 'Бучанський район, Макарівська громада, Колонщинська сільська рада',
           description: 'Найпівденніша частина комплексу. Клубний формат: 22 елітних домоволодіння з власним виходом до каналу. Земельна ділянка 13.73 Га з відродженою природною водоймою. Кожен інвестор отримує 35 соток землі, будинок та приватну частину озера. Ідеальне місце для заміської резиденції з садом екзотичних рослин. Капіталізація $14.4 млн.',
           area: '13.73 Га',
-          price: '$481 000',
+          price: '$490 000',
           minLot: '13.73 Га',
           image: countryResImg,
           coordinates: [50.468446, 29.933377],

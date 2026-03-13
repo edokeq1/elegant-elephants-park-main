@@ -74,15 +74,6 @@ export const Hero: React.FC<{ t: any; onNavigate: (page: any) => void }> = ({ t,
         {/* Animated Content Group */}
         <div className="flex flex-col items-center gap-6 md:gap-10 max-w-5xl mx-auto my-auto">
 
-          {/* Badge */}
-          <div className="opacity-0 animate-reveal-up stagger-1">
-            {t.badge && (
-              <span className="text-[10px] md:text-sm font-black uppercase tracking-[0.4em] text-brand-accent-light border px-4 py-2 md:px-5 md:py-2.5 border-brand-accent/30 rounded-full backdrop-blur-md bg-brand-dark/30">
-                {t.badge}
-              </span>
-            )}
-          </div>
-
           {/* Title */}
           <div className="opacity-0 animate-reveal-up stagger-2">
             <h1 className="text-5xl md:text-7xl xl:text-8xl 2xl:text-9xl font-light uppercase tracking-tighter leading-[0.85] text-white">
@@ -91,11 +82,22 @@ export const Hero: React.FC<{ t: any; onNavigate: (page: any) => void }> = ({ t,
             </h1>
           </div>
 
-          {/* description */}
-          <div className="opacity-0 animate-reveal-up stagger-3">
-            <p className="text-gray-300 text-sm md:text-xl max-w-2xl mx-auto leading-relaxed font-light uppercase tracking-wider md:tracking-widest px-4">
-              {t.description}
-            </p>
+          <div className="space-y-6">
+            {/* Badge - Positioned explicitly above description */}
+            <div className="opacity-0 animate-reveal-up stagger-1">
+              {t.partners && (
+                <span className="text-[10px] md:text-sm font-black uppercase tracking-[0.4em] text-brand-accent-light border px-4 py-2 md:px-5 md:py-2.5 border-brand-accent/30 rounded-full backdrop-blur-md bg-brand-dark/30">
+                  {t.partners}
+                </span>
+              )}
+            </div>
+
+            {/* description */}
+            <div className="opacity-0 animate-reveal-up stagger-3">
+              <p className="text-gray-300 text-sm md:text-xl max-w-2xl mx-auto leading-relaxed font-light uppercase tracking-wider md:tracking-widest px-4">
+                {t.description}
+              </p>
+            </div>
           </div>
 
           {/* CTA Buttons */}

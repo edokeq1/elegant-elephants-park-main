@@ -25,20 +25,11 @@ export const IntroVideo: React.FC<{ t: any, onNavigate: (page: any) => void }> =
             <div className="relative flex flex-col items-center justify-center z-20 px-6 pt-[120px] pb-24 text-center flex-grow min-h-[100dvh]">
                 <div className="max-w-4xl mx-auto flex flex-col items-center gap-8 md:gap-14 animate-reveal-up stagger-1 w-full">
 
-                    {/* Partners Text - Moved to Top */}
-                    <div className="mb-2 opacity-90 animate-pulse-slow px-2">
-                        <span className="inline-block text-[10px] sm:text-xs md:text-sm font-black uppercase tracking-[0.1em] sm:tracking-[0.2em] md:tracking-[0.4em] text-brand-accent border px-3 py-2 md:px-6 md:py-3 border-brand-accent/50 rounded-2xl md:rounded-full leading-relaxed max-w-full break-words">
-                            {t.intro.partners}
-                        </span>
-                    </div>
 
                     {/* Yield */}
                     <div className="flex flex-col gap-2">
-                        <h2 className="text-6xl md:text-8xl font-black tracking-tighter text-brand-accent-light drop-shadow-2xl">
-                            {t.intro.yield.split('%')[0]}%
-                            <span className="text-3xl md:text-5xl font-light ml-2 tracking-normal opacity-80">
-                                {t.intro.yield.split('%')[1]}
-                            </span>
+                        <h2 className="text-4xl md:text-6xl font-black uppercase tracking-tight text-brand-accent-light drop-shadow-2xl">
+                            {t.intro.yield}
                         </h2>
                         <p className="text-sm md:text-lg uppercase tracking-widest text-gray-300 font-light border-t border-brand-accent/30 pt-4 w-full max-w-md mx-auto">
                             {t.intro.note}

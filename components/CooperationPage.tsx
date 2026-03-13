@@ -232,22 +232,22 @@ export const CooperationPage: React.FC<CooperationPageProps> = ({ onBack, t }) =
 
           {/* Form Side */}
           <div className="relative isolate group/form mt-12 lg:mt-0 opacity-0 animate-reveal-up stagger-3">
-            <div className="absolute -inset-1 bg-gradient-to-tr from-brand-accent/10 to-transparent rounded-[40px] blur-xl opacity-30 group-hover/form:opacity-60 transition-opacity duration-700 -z-10" />
+            <div className="absolute -inset-1 bg-brand-accent/20 rounded-[40px] blur-xl opacity-30 group-hover/form:opacity-60 transition-opacity duration-700 -z-10" />
             
-            <div className="bg-[#1F2F3D]/80 backdrop-blur-xl border border-white/10 p-8 md:p-14 rounded-[32px] md:rounded-[40px] shadow-3xl overflow-hidden relative">
+            <div className="bg-[#1F2F3D] border-2 border-brand-accent/40 p-8 md:p-14 rounded-[32px] md:rounded-[40px] shadow-[0_0_50px_rgba(141,163,181,0.2)] overflow-hidden relative">
               
               {isSubmitted ? (
                 <div className="py-16 text-center space-y-8 animate-in fade-in slide-in-from-bottom-8 duration-1000">
                   <div className="relative inline-block">
-                    <div className="absolute inset-0 bg-green-500 blur-2xl opacity-10" />
-                    <div className="w-24 h-24 bg-green-500/10 text-green-500 rounded-full flex items-center justify-center mx-auto mb-4 border border-green-500/20 shadow-[0_0_50px_rgba(34,197,94,0.1)]">
+                    <div className="absolute inset-0 bg-white blur-2xl opacity-20" />
+                    <div className="w-24 h-24 bg-white/10 text-white rounded-full flex items-center justify-center mx-auto mb-4 border border-white/20 shadow-[0_0_50px_rgba(255,255,255,0.1)]">
                       <CheckCircle2 className="w-12 h-12" />
                     </div>
                   </div>
                   <div className="space-y-4">
-                    <h2 className="text-4xl font-black uppercase tracking-tighter">{t.successTitle}</h2>
-                    <div className="h-1 w-20 bg-brand-accent mx-auto rounded-full" />
-                    <p className="text-gray-400 text-lg font-light leading-relaxed max-w-xs mx-auto">
+                    <h2 className="text-4xl font-black uppercase tracking-tighter text-white">{t.successTitle}</h2>
+                    <div className="h-1 w-20 bg-white mx-auto rounded-full" />
+                    <p className="text-white/90 text-lg font-light leading-relaxed max-w-xs mx-auto">
                       {t.successText}
                     </p>
                   </div>
@@ -257,7 +257,7 @@ export const CooperationPage: React.FC<CooperationPageProps> = ({ onBack, t }) =
                       setShowValidation(false);
                       setFormState({ name: '', email: '', phone: '', message: '' });
                     }}
-                    className="text-xs uppercase tracking-[0.3em] text-brand-accent hover:text-white transition-colors"
+                    className="text-xs uppercase tracking-[0.3em] text-white/70 hover:text-white transition-colors"
                   >
                     {t.successAction}
                   </button>
@@ -265,8 +265,8 @@ export const CooperationPage: React.FC<CooperationPageProps> = ({ onBack, t }) =
               ) : (
                 <form onSubmit={handleSubmit} noValidate className="space-y-4 md:space-y-8">
                   <div className="space-y-1">
-                    <h2 className="text-xl md:text-2xl font-black uppercase tracking-tighter leading-none">{t.formTitle}</h2>
-                    <p className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] text-gray-500">{t.formSubtitle}</p>
+                    <h2 className="text-xl md:text-2xl font-black uppercase tracking-tighter leading-none text-white">{t.formTitle}</h2>
+                    <p className="text-[9px] md:text-[10px] uppercase tracking-[0.3em] text-brand-accent/70">{t.formSubtitle}</p>
                   </div>
                   
                   <div className="space-y-4 md:space-y-6">
@@ -317,7 +317,7 @@ export const CooperationPage: React.FC<CooperationPageProps> = ({ onBack, t }) =
                         onChange={(val: string) => handleInputChange('message', val)}
                         t={t}
                       />
-                      <p className="text-[10px] text-gray-500 font-light px-1">
+                      <p className="text-[10px] text-brand-accent/60 font-light px-1">
                         {t.privacyConsent}
                       </p>
                     </div>

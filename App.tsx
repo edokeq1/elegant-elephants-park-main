@@ -18,6 +18,7 @@ import { CountryResidenceSection } from './components/CountryResidenceSection';
 import { CascadeLakesSection } from './components/CascadeLakesSection';
 import { ElephantParkSection } from './components/ElephantParkSection';
 import { IntroVideo } from './components/IntroVideo';
+import { InfoBlock } from './components/InfoBlock';
 import { translations, Language } from './translations';
 import { FAQSection } from './components/FAQSection';
 import { NoiseOverlay } from './components/NoiseOverlay';
@@ -132,6 +133,7 @@ function App() {
             <>
               <Hero t={t.hero} onNavigate={handleNavigate} />
               <IntroVideo t={t} onNavigate={handleNavigate} />
+              <InfoBlock t={t} />
               <ColTownSection t={t.colTown} />
               <RiverColSection t={t.riverCol} />
               <CountryResidenceSection t={t.countryResidence} />
